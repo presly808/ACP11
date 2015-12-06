@@ -18,21 +18,24 @@ public class Controller implements OperationController {
 
     @Override
     public boolean addCard(Integer cardId, String employee) {
-        if (turniketDB.getCards().containsKey(cardId)){return  false;}
-        else {
-           turniketDB.getCards().put(cardId, employee);
-           //turniketDB.getOperations().put(cardId, null);
-           return true;
+        if (turniketDB.getCards().containsKey(cardId)) {
+            return false;
+        } else {
+            turniketDB.getCards().put(cardId, employee);
+           // turniketDB.getOperations().put(cardId, null);
+            return true;
         }
     }
 
     @Override
     public boolean deleteCard(Integer cardId) {
-        if (turniketDB.getCards().containsKey(cardId)){
+        if (turniketDB.getCards().containsKey(cardId)) {
             turniketDB.getCards().remove(cardId);
             turniketDB.getOperations().remove(cardId);
-            return true;}
-        else {return false;}
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -42,27 +45,32 @@ public class Controller implements OperationController {
 
     public Operation ScanIn(Integer cardId, Date date, Time time) {
         Operation operation = new Operation(cardId, time, TypeOfOperation.IN);
+
         if (turniketDB.getOperations().containsKey(cardId)) {
-            if (turniketDB.getOperations().get(cardId).containsKey(date)) {
-                turniketDB.getOperations().get(cardId).get(date).add(operation);
+
+            Map<Date, List<Operation>> dateListMap = turniketDB.getOperations().get(cardId);
+
+            if (dateListMap.containsKey(date)) {
+                dateListMap.get(date).add(operation);
             } else {
-               ArrayList<Operation> operations = new ArrayList<Operation>();
-               operations.add(operation);
-               turniketDB.getOperations().get(cardId).put(date, operations);
-            }}
-        else {
-             ArrayList<Operation> operations = new ArrayList<Operation>();
-             operations.add(operation);
-             Map<Date ,  ArrayList<Operation>> map = new HashMap<>();
-             map.put(date, operations);
-             turniketDB.getOperations().put(cardId, map);
-             }
+                List<Operation> operations = new ArrayList<>();
+                operations.add(operation);
+                dateListMap.put(date, operations);
+            }
+
+        } else {
+            List<Operation> operations = new ArrayList<>();
+            operations.add(operation);
+            Map<Date, List<Operation>> map = new HashMap<>();
+            map.put(date, operations);
+            turniketDB.getOperations().put(cardId, map);
+        }
 
         return operation;
     }
 
-    public Operation ScanOut(Integer cardId, Date date, Time time){
-        Operation operation =  new Operation(cardId, time, TypeOfOperation.OUT);
+    public Operation ScanOut(Integer cardId, Date date, Time time) {
+        Operation operation = new Operation(cardId, time, TypeOfOperation.OUT);
         turniketDB.getOperations().get(cardId).get(date).add(operation);
         return operation;
     }

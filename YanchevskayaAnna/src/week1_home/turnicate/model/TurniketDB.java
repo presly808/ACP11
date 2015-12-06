@@ -2,6 +2,7 @@ package week1_home.turnicate.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -10,14 +11,14 @@ import java.util.Map;
 public class TurniketDB {
 
     private Map<Integer,String> cards = new HashMap<>();
-    private Map<Integer, Map <Date, ArrayList<Operation>>> operations = new HashMap<>();
+    private Map<Integer, Map <Date, List<Operation>>> operations = new HashMap<>();
     private Time amountTime;
 
-    public Map<Integer, Map<Date, ArrayList<Operation>>> getOperations() {
+    public Map<Integer, Map<Date, List<Operation>>> getOperations() {
         return operations;
     }
 
-    public void setOperations(Map<Integer, Map<Date, ArrayList<Operation>>> operations) {
+    public void setOperations(Map<Integer, Map<Date, List<Operation>>> operations) {
         this.operations = operations;
     }
 
