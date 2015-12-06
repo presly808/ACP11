@@ -1,5 +1,5 @@
 package tourniquet;
-import market.model.Product;
+
 import java.util.ArrayList;
 
 public class CardDB {
