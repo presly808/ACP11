@@ -6,7 +6,7 @@ package week1_home.turnicate.model;
 public class Date implements Comparable<Date> {
     private int year;
     private int month;
-    private int day;
+    private int  day;
 
     public Date(int year, int month, int day) {
         this.year = year;
