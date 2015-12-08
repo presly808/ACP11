@@ -6,8 +6,6 @@ import week_01_home.card_code.model.CardReader;
 import week_01_home.card_code.model.Transaction;
 import week_01_home.card_code.view.AppView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -58,7 +56,7 @@ public class AppController {
         return null;
     }
 
-    // TODO <T>
+    // TODO <T> Два одинаковых метода для разных типов. как прикрутить дженерик?
     /*
     private <T> getInstanceById(int id) {
 
@@ -158,7 +156,7 @@ public class AppController {
 
         System.out.println("The best card is:");
         System.out.println(getCardById(maxIndex).toString());
-        System.out.println("and total work time: " + totalCardTime[maxIndex]);
+        System.out.println("and total work time (hrs): " + totalCardTime[maxIndex]/(1000*60*60));
     }
 
     // Fill DB with DEMO DATA

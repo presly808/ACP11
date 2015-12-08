@@ -38,6 +38,7 @@ public class AppView {
     private int showMenu(String... items) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println(" ");
         System.out.println(MENU);
         int i = 1;
         for(String item : items) {
@@ -45,6 +46,7 @@ public class AppView {
         }
         System.out.println(EXIT);
         System.out.print(CHOICE);
+        System.out.println(" ");
 
         return sc.nextInt();
     }
@@ -88,6 +90,9 @@ public class AppView {
             case 11:
                 Date d = new Date();
                 System.out.println(d.getTime());
+                break;
+            case 12:
+                ac.scanCard();
                 break;
             case 0:
             default:
