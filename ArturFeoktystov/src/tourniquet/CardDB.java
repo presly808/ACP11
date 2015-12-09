@@ -4,9 +4,13 @@ import java.util.ArrayList;
 
 public class CardDB {
 
-    private ArrayList<Card> cards = new ArrayList<>();
+    private ArrayList<Card> cards;
+    private ArrayList<ArrayList<Time>> time;
 
-
+    public CardDB() {
+        this.cards = new ArrayList<Card>();
+        this.time = new ArrayList<ArrayList<Time>>();
+    }
 
     public ArrayList<Card> getCards() {
         return cards;
@@ -17,5 +21,7 @@ public class CardDB {
     }
 
 
-
+    public ArrayList<ArrayList<Time>> getTime() {
+        return time;
+    }
 }
