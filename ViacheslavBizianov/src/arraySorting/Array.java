@@ -14,7 +14,6 @@ public class Array {
     }
 
     public void selectionSort(int[] array){
-
         for (int i=0; i<array.length-1; i++){
             int min = array[i];
             int index_min = i;
@@ -26,6 +25,17 @@ public class Array {
             }
             if (i != index_min) {
                 swap(array, i, index_min);
+            }
+        }
+    }
+
+    public void insertionSort(int[] array){
+        for (int i=1; i<array.length; i++){
+            for (int j=i-1; j>0; j--){
+                if (array[i] < array[j]){
+                    swap(array, i, j);
+                    break;
+                }
             }
         }
     }
