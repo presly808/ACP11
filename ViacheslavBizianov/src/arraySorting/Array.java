@@ -40,6 +40,32 @@ public class Array {
         }
     }
 
+    public void quickSort(int[] array, int left, int right){
+        if (left >= right){
+            return;
+        } else {
+            int index = partitionArray(array, left, right, array[right]);
+            quickSort(array, 0, index - 1);
+            quickSort(array, index + 1, right);
+        }
+    }
+
+    public int partitionArray(int[] array, int left, int right, int median){
+        int leftPointer = left - 1;
+        int rightPointer = right + 1;
+
+        while(true){
+            while (leftPointer < right && array[++leftPointer] < median);
+            while (rightPointer > left && array[--rightPointer] > median);
+            if (leftPointer >= rightPointer){
+                break;
+            } else {
+                swap(array, leftPointer, rightPointer);
+            }
+        }
+        return leftPointer;
+    }
+
     private void swap(int[] array, int a, int b){
         int c = array[a];
         array[a] = array[b];
