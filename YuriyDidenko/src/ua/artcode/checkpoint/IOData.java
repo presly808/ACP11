@@ -34,6 +34,17 @@ public class IOData {
         return curStringDateTime;
     }
 
+    public String getDateTimeToStr(Date date, String formatOutDateTime) {
+        String StringDateTime = "";
+        if (date != null) {
+            // строка в формате, удобном для вывода
+            StringDateTime = new SimpleDateFormat(formatOutDateTime).format(date);
+        }                  //  2015.12.12 13:40:15
+        else StringDateTime = " - - - - - - - - - ";
+
+        return StringDateTime;
+    }
+
     public Date getDateTimeNow() {
 
         // Для получения текущего системного времени
@@ -45,6 +56,6 @@ public class IOData {
         // Date из строки, в которой дата с заданным шаблоном
         //System.out.println( new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss").format(timeNow.getDateTimeNow()) );
 
-        return curDateTime ;
+        return curDateTime;
     }
 }
