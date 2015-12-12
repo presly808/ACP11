@@ -13,34 +13,8 @@ public class HashMap<K,V> implements Map<K,V> {
     private final double loadFactor = 0.75;
     private int size;
 
-
-
     public HashMap() {
         this.nodes = new Node[DEFAULT_ARRAY_SIZE];
-    }
-
-    private class Node<K,V> implements Iterator{
-        K key;
-        V value;
-        Node<K,V> next;
-
-        public Node(K key, V value, Node<K,V> next) {
-            this.key = key;
-            this.value = value;
-            this.next = next;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return (next == null);
-        }
-
-        @Override
-        public Object next() {
-            return next;
-        }
-
-
     }
 
     @Override
@@ -77,7 +51,7 @@ public class HashMap<K,V> implements Map<K,V> {
             return value;
         } else {
             Node<K,V> iter = nodes[index];
-            while (iter.hasNext()){
+            while (iter.next != null){
                 iter = iter.next;
             }
             V lastValue = iter.value;
@@ -114,5 +88,46 @@ public class HashMap<K,V> implements Map<K,V> {
     @Override
     public Set<Entry<K, V>> entrySet() {
         return null;
+    }
+
+    private class NodeIterator implements Iterator<Node<K,V>>{
+        private int currentIndex;
+        private Node<K,V> currentNode;
+
+        public NodeIterator() {
+            firstNotNullNode();
+        }
+
+        private void firstNotNullNode() {
+            for (int i=0; i<nodes.length; i++){
+                if (nodes[i] != null){
+                    currentIndex = i;
+                    currentNode = nodes[currentIndex];
+                    break;
+                }
+            }
+        }
+
+        @Override
+        public boolean hasNext() {
+            return (currentNode.next != null);
+        }
+
+        @Override
+        public Node<K, V> next() {
+            return currentNode.next;
+        }
+    }
+
+    private class Node<K,V>{
+        K key;
+        V value;
+        Node<K,V> next;
+
+        public Node(K key, V value, Node<K,V> next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
     }
 }
