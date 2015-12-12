@@ -20,6 +20,10 @@ public class RunCheckpoint {
         // вывод всех сотрудников на экран
         dataModule.printListStaffAll();
 
-
+        Date d = new Date();
+        d = null;
+        if (d == null) {
+            System.out.print("Date = null");
+        }
     }
 }
