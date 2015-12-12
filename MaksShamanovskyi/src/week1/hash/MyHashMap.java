@@ -163,7 +163,12 @@ public class MyHashMap<K,V> implements Map<K,V> {
 
     @Override
     public Set<Entry<K, V>> entrySet() {
-        return null;
+        Set<Entry<K, V>> set = new HashSet<>();
+        BucketIterator iter = new BucketIterator();
+        while (iter.hasNext()){
+            set.add(iter.next());
+        }
+        return set;
     }
 
     public Iterator getIterator(){
@@ -227,10 +232,10 @@ public class MyHashMap<K,V> implements Map<K,V> {
     }
 
 
-    private static class Bucket<K,V> {
+    private static class Bucket<K, V> implements Entry<K, V>{
         K key;
         V value;
-        Bucket<K,V> next;
+        Bucket next;
 
         public Bucket(K key, V value, Bucket next) {
             this.key = key;
@@ -241,6 +246,22 @@ public class MyHashMap<K,V> implements Map<K,V> {
         public Bucket(K key, V value) {
             this.key = key;
             this.value = value;
+        }
+
+        @Override
+        public K getKey() {
+            return key;
+        }
+
+        @Override
+        public V getValue() {
+            return value;
+        }
+
+        @Override
+        public V setValue(V v) {
+            value = v;
+            return value;
         }
     }
 }
