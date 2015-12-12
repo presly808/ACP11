@@ -7,8 +7,10 @@ import java.util.*;
  */
 
 public class DataModule {
-    // список всех сотрудников
+    // список всех сотрудников (альтернативный вариант)
     public HashMap<String, CardStaff> staffDB;
+
+    // БАЗОВЫЕ СТРУКТУРЫ ДАННЫХ ПРОГРАММЫ
     // список всех сотрудников
     public List<CardStaff> listStaff;
     // журнал посещения сотрудниками предприятия
@@ -36,7 +38,7 @@ public class DataModule {
         staffDB.put(s4.getId(), s4);
 
         // save data about staff in ArrayList
-        //listStaff = Arrays.asList(s1, s2, s3, s4); потом нельзя использовать методы add, delete
+        //listStaff = Arrays.asList(s1, s2, s3, s4); но потом нельзя использовать методы add, delete
         listStaff.add(s1);
         listStaff.add(s2);
         listStaff.add(s3);
