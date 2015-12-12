@@ -33,4 +33,20 @@ public class Card {
     public String toString() {
         return "Card #" + this.id + " [ " + this.name + " ] is " + ( this.session != null ? "IN" : "OUT" );
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Card card = (Card) o;
+
+        return id == card.id;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
 }

@@ -56,6 +56,18 @@ public class AppController {
         return null;
     }
 
+    public static <T> T findItem(T item, List<T> list){
+        int index = list.indexOf(item);
+        if(index != -1){
+            return list.get(index);
+        }
+        return null;
+    }
+
+    public static <T> T findItem8(T item, List<T> list){
+        return list.stream().filter((el) -> el.equals(item)).findFirst().get();
+    }
+
     // TODO <T> Два одинаковых метода для разных типов. как прикрутить дженерик?
     /*
     private <T> getInstanceById(int id) {
@@ -82,7 +94,7 @@ public class AppController {
         System.out.print("Input card reader ID to close: ");
         int id = sc.nextInt();
 
-        CardReader cardReader = getCardReaderById(id);
+        CardReader cardReader = findItem(new CardReader(id), app.getCardReaders());
         if( cardReader != null ) {
             System.out.println(cardReader.toString());
             cardReader.close();

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class CardDB {
 
-    private ArrayList<Card> cards;
-    private ArrayList<ArrayList<Time>> time;
+    private List<Card> cards;
+    private List<ArrayList<Time>> time;
 
     public CardDB() {
         this.cards = new ArrayList<Card>();

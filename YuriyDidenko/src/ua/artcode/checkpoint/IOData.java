@@ -22,29 +22,40 @@ public class IOData {
 
     public String getDateTimeNowToStr() {
 
-        // Для получения текущего системного времени
+        // Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ С‚РµРєСѓС‰РµРіРѕ СЃРёСЃС‚РµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё
         long curTime = System.currentTimeMillis();
 
-        // значение типа Date с этим временем
+        // Р·РЅР°С‡РµРЅРёРµ С‚РёРїР° Date СЃ СЌС‚РёРј РІСЂРµРјРµРЅРµРј
         Date curDate = new Date(curTime);
 
-        // строка в формате, удобном для вывода
+        // СЃС‚СЂРѕРєР° РІ С„РѕСЂРјР°С‚Рµ, СѓРґРѕР±РЅРѕРј РґР»СЏ РІС‹РІРѕРґР°
         String curStringDateTime = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss").format(curTime);
 
         return curStringDateTime;
     }
 
+    public String getDateTimeToStr(Date date, String formatOutDateTime) {
+        String StringDateTime = "";
+        if (date != null) {
+            // СЃС‚СЂРѕРєР° РІ С„РѕСЂРјР°С‚Рµ, СѓРґРѕР±РЅРѕРј РґР»СЏ РІС‹РІРѕРґР°
+            StringDateTime = new SimpleDateFormat(formatOutDateTime).format(date);
+        }                  //  2015.12.12 13:40:15
+        else StringDateTime = " - - - - - - - - - ";
+
+        return StringDateTime;
+    }
+
     public Date getDateTimeNow() {
 
-        // Для получения текущего системного времени
+        // Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ С‚РµРєСѓС‰РµРіРѕ СЃРёСЃС‚РµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё
         long curTime = System.currentTimeMillis();
 
-        // значение типа Date с этим временем
+        // Р·РЅР°С‡РµРЅРёРµ С‚РёРїР° Date СЃ СЌС‚РёРј РІСЂРµРјРµРЅРµРј
         Date curDateTime = new Date(curTime);
 
-        // Date из строки, в которой дата с заданным шаблоном
+        // Date РёР· СЃС‚СЂРѕРєРё, РІ РєРѕС‚РѕСЂРѕР№ РґР°С‚Р° СЃ Р·Р°РґР°РЅРЅС‹Рј С€Р°Р±Р»РѕРЅРѕРј
         //System.out.println( new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss").format(timeNow.getDateTimeNow()) );
 
-        return curDateTime ;
+        return curDateTime;
     }
 }
