@@ -76,10 +76,10 @@ public class MyHashMap<K,V> implements Map<K,V>, Iterable{
         int hash = key.hashCode();
         int position = Math.abs(hash % table.length);
 
-        Node iter = table[position];
+        Node<K,V> iter = table[position];
         while(iter != null){
             if(iter.key.equals(key)){
-                return (V) iter.val;
+                return iter.val;
             }
             iter = iter.next;
         }
@@ -152,28 +152,55 @@ public class MyHashMap<K,V> implements Map<K,V>, Iterable{
 
     @Override
     public Set<K> keySet() {
-        return null;
+
+        Set<K> coll = new HashSet<>();
+
+        Iterator<Node> iterator = new MyHashMapTableIterator();
+
+        while(iterator.hasNext()){
+            Node<K,V> next = iterator.next();
+            coll.add(next.key);
+        }
+
+        return coll;
     }
 
     @Override
     public Collection<V> values() {
-        return null;
+        Collection<V> coll = new ArrayList<>();
+
+        Iterator<Node> iterator = new MyHashMapTableIterator();
+
+        while(iterator.hasNext()){
+            Node<K,V> next = iterator.next();
+            coll.add(next.val);
+        }
+
+        return coll;
     }
 
     @Override
     public Set<Entry<K, V>> entrySet() {
+        Set<Entry<K,V>> set = new HashSet<>();
 
-        return null;
+        Iterator<Node> iterator = new MyHashMapTableIterator();
+
+        while(iterator.hasNext()){
+            Node next = iterator.next();
+            set.add(next);
+        }
+
+        return set;
     }
 
     //private static class MyHashMapTableIterator implements Iterator<Node>{
-    private class MyHashMapTableIterator implements Iterator<Node>{
+    private class MyHashMapTableIterator implements Iterator<Node> {
 
         //private Node curr;
         private Stack<Node> stack;
 
         public MyHashMapTableIterator() {
-            stack = new Stack<Node>();
+            stack = new Stack<>();
             for (int j= table.length-1; j>=0; j--)
             {
                 if (table[j] != null) {
@@ -203,31 +230,31 @@ public class MyHashMap<K,V> implements Map<K,V>, Iterable{
         return new MyHashMapTableIterator();
     }
 
-    private static class Node implements Entry {
+    private static class Node<K,V> implements Entry<K,V> {
 
-        Object key;
-        Object val;
+        K key;
+        V val;
         Node next;
 
-        public Node(Object key, Object val, Node next) {
+        public Node(K key, V val, Node next) {
             this.key = key;
             this.val = val;
             this.next = next;
         }
 
         @Override
-        public Object getKey() {
+        public K getKey() {
             return key;
         }
 
         @Override
-        public Object getValue() {
+        public V getValue() {
             return val;
         }
 
         @Override
-        public Object setValue(Object value) {
-            Object old = val;
+        public V setValue(V value) {
+            V old = val;
             val = value;
             return old;
         }

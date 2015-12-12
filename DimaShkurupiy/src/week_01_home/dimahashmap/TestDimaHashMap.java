@@ -1,12 +1,14 @@
 package week_01_home.dimahashmap;
 
+import java.util.Map;
+
 /**
  * Created by dima on 08.12.2015.
  */
 public class TestDimaHashMap {
     public static void main(String[] args) {
         //DimaHashMap<Integer,String> dhm = new DimaHashMap<>();
-        DimaHashMap<String,String> dhm = new DimaHashMap<>();
+        Map<String,String> dhm = new DimaHashMap<>();
 
         /* pass ok
         System.out.println("isEmpty " + dhm.isEmpty());

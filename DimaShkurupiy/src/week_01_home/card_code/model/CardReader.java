@@ -11,6 +11,11 @@ public class CardReader {
     private int id;
     private String note;
 
+    // constructor for search
+    public CardReader(int id) {
+        this.id = id;
+    }
+
     public CardReader(String note) {
         this.id = ++currentId;
         this.note = note;
@@ -39,5 +44,21 @@ public class CardReader {
 
     public String toString() {
         return "CardReader #" + this.id + " [ " + this.note + " ] is " + ( this.openToPass ? "OPEN" : "CLOSE" );
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CardReader that = (CardReader) o;
+
+        return id == that.id;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
     }
 }

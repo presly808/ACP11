@@ -6,6 +6,7 @@ import java.util.*;
  * Created by dima on 08.12.2015.
  */
 public class DimaHashMap<K,V> implements Map<K,V> {
+
     private final int DEFAULT_SIZE = 16;
     private int size = 0;
 
@@ -56,7 +57,7 @@ public class DimaHashMap<K,V> implements Map<K,V> {
                 } else {
                     return (V) link.getValue();
                 }
-            } while ( link.getNext() != null );
+            } while ( link != null );
         }
         return null;
     }
@@ -77,7 +78,7 @@ public class DimaHashMap<K,V> implements Map<K,V> {
         } else {
 
             do {
-                System.out.println( link.getKey().equals( (K)key ) );
+                System.out.println( link.getKey().equals(key ) );
                 //if (key.equals(link.getKey())) {
                 if ( link.getKey().equals( (K)key ) ) {
                     //////////////////////
