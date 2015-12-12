@@ -9,6 +9,8 @@ import java.util.*;
 public class DataModule {
     // список всех сотрудников (альтернативный вариант)
     public HashMap<String, CardStaff> staffDB;
+
+    // БАЗОВЫЕ СТРУКТУРЫ ДАННЫХ ПРОГРАММЫ
     // список всех сотрудников
     public List<CardStaff> listStaff;
     // журнал посещения сотрудниками предприятия
