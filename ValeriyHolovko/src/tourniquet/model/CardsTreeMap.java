@@ -55,7 +55,7 @@ public class CardsTreeMap<K,V> implements Map<K,V> {
 
         if (compareResult < 0){
             return find(key,current.leftChild);
-        } else if (compareResult < 0){
+        } else if (compareResult > 0){
             return find(key,current.rightChild);
         } else {
             return current;
@@ -156,7 +156,28 @@ public class CardsTreeMap<K,V> implements Map<K,V> {
             this.key = key;
             this.value = vlaue;
         }
+
+        @Override
+        public String toString() {
+            return "MyEntry{" +
+                    "key=" + key +
+                    ", value=" + value +
+                    '}';
+        }
     }
 
+    private String toString(MapTreeNode rootCurrent){
+
+        if(rootCurrent == null){
+            return "";
+        }
+
+        return toString(rootCurrent.leftChild) + rootCurrent.entry.toString() + toString(rootCurrent.rightChild);
+    }
+
+    @Override
+    public String toString() {
+        return toString(root);
+    }
 
 }
