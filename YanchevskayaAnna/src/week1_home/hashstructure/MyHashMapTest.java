@@ -1,9 +1,11 @@
 package week1_home.hashstructure;
 
+import java.util.Map;
+
 public class MyHashMapTest {
 
     public static void main(String[] args) {
-        MyHashMap<String, String> myHashMap = new MyHashMap(100);
+        Map<String, String> myHashMap = new MyHashMap(100);
         myHashMap.put("мова", "language");
         myHashMap.put("покращити", "improve");
         myHashMap.put("допомога", "help");

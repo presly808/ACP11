@@ -19,7 +19,7 @@ public class HashMap<K,V> implements Map<K,V> {
         this.nodes = new Node[DEFAULT_ARRAY_SIZE];
     }
 
-    private class Node<K,V> implements Iterator{
+    private class Node<K,V> implements Iterator {
         K key;
         V value;
         Node<K,V> next;
