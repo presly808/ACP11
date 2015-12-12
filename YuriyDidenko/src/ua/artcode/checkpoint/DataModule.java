@@ -44,17 +44,20 @@ public class DataModule {
 
         Date d1 = new Date();
         Date d2 = new Date();
-        d1.setTime(d1.getTime()-9900000);
-        checkPointLogRecs.add(new CheckPointLogRec("0003", d1, d2) );
-        d1 = new Date();
-        d2 = new Date();
+
         d1.setTime(d1.getTime()-20000000);
-        d2.setTime(d2.getTime()-77777);
+        d2.setTime(d2.getTime()-777770);
         checkPointLogRecs.add(new CheckPointLogRec("0002", d1, d2) );
+
         d1 = new Date();
         d2 = new Date();
-        d1.setTime(d1.getTime()-9960000);
-        checkPointLogRecs.add(new CheckPointLogRec("0004", d1, null) );
+        d1.setTime(d1.getTime()-15000000);
+        checkPointLogRecs.add(new CheckPointLogRec("0004", d1, d2) );
+
+        d1 = new Date();
+        d2 = new Date();
+        d1.setTime(d1.getTime()-10000000);
+        checkPointLogRecs.add(new CheckPointLogRec("0003", d1, null) );
 
     }
 
