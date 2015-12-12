@@ -7,10 +7,13 @@ import java.util.*;
  */
 
 public class DataModule {
-    public HashMap<String, CardStaff> staffDB; // список всех сотрудников
-    public List<CardStaff> listStaff; // список всех сотрудников
-    public List<CheckPointLogRec> checkPointLogRecs; // журнал посещения сотрудниками предприятия
-    //public final Date dateCreateCompany = new Date("2000.01.01");
+    // список всех сотрудников
+    public HashMap<String, CardStaff> staffDB;
+    // список всех сотрудников
+    public List<CardStaff> listStaff;
+    // журнал посещения сотрудниками предприятия
+    public List<CheckPointLogRec> checkPointLogRecs;
+
 
     public void CreateDataStructure01(){
         staffDB = new HashMap<String, CardStaff>(); // array staff list
@@ -39,6 +42,22 @@ public class DataModule {
         listStaff.add(s3);
         listStaff.add(s4);
 
+        Date d1 = new Date();
+        Date d2 = new Date();
+
+        d1.setTime(d1.getTime()-20000000);
+        d2.setTime(d2.getTime()-777770);
+        checkPointLogRecs.add(new CheckPointLogRec("0002", d1, d2) );
+
+        d1 = new Date();
+        d2 = new Date();
+        d1.setTime(d1.getTime()-15000000);
+        checkPointLogRecs.add(new CheckPointLogRec("0004", d1, d2) );
+
+        d1 = new Date();
+        d2 = new Date();
+        d1.setTime(d1.getTime()-10000000);
+        checkPointLogRecs.add(new CheckPointLogRec("0003", d1, null) );
     }
 
     // вывод всех сотрудников на экран
@@ -46,9 +65,52 @@ public class DataModule {
         for (CardStaff item : listStaff) {
             System.out.println(item.toString());
         }
-
     }
 
+    // поиск индекса в списке сотрудников зная его персональный код
+    public int getIndexStaff(String id){
+        for (int i = 0; i < listStaff.size(); i++){
+            if (listStaff.get(i).getId() == id) {
+                return i;
+            }
+        }
+        return -1; // id not found
+    }
 
+    // вывод на экран журнала посещений
+    // typeSort { 1 - сортировка по возрастанию дат, 2 - обратная сотрировка}
+    public void showCheckPointLogAll(DataModule dataModule, int typeSort){
+        System.out.println();
+        System.out.println("-=< ЖУРНАЛ ПОСЕЩЕНИЯ СОТРУДНИКОВ >=-");
+        System.out.println("Время начала работы | Время окончания     |Сотрудник");
+        // 1 - сортировка по возрастанию дат
+        if (typeSort == 1) {
+            for (int i = 0; i <  dataModule.checkPointLogRecs.size(); i++) {
+                System.out.println(dataModule.getCheckPointLogRecsToStr(dataModule, i));
+            }
+        }
+        // 2 - обратная сотрировка
+        if (typeSort == 2) {
+            for (int i = dataModule.checkPointLogRecs.size() - 1; i >= 0; i--) {
+                System.out.println(dataModule.getCheckPointLogRecsToStr(dataModule, i));
+            }
+        }
+    }
+
+    private String getCheckPointLogRecsToStr(DataModule dataModule, int curIndex){
+        StringBuilder sb = new StringBuilder();
+        // поиск сотрудника по персональному коду в списке сотрудников
+        int indexStaff = dataModule.getIndexStaff(dataModule.checkPointLogRecs.get(curIndex).getIdCardStaff());
+        //если результат <> -1, значит сотрудник найден :)
+        if (indexStaff != -1) {
+            // вывод даты и времени в заданном формате
+            sb.append(new IOData().getDateTimeToStr(dataModule.checkPointLogRecs.get(curIndex).getDateTimeIn(), "yyyy.MM.dd HH:mm:ss"));
+            sb.append(" | ");
+            sb.append(new IOData().getDateTimeToStr(dataModule.checkPointLogRecs.get(curIndex).getDateTimeOut(), "yyyy.MM.dd HH:mm:ss"));
+            sb.append(" ");
+            sb.append(dataModule.listStaff.get(indexStaff).toString());
+        }
+        return sb.toString();
+    }
 
 }

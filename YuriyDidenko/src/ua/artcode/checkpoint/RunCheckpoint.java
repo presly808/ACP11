@@ -10,20 +10,18 @@ public class RunCheckpoint {
 
     public static void main(String[] args){
 
+        // блок инициализации стартовых параметров
         DataModule dataModule = new DataModule();
         dataModule.CreateDataStructure01();
         dataModule.startIniParam01();
 
-        IOData timeNow = new IOData();
-        System.out.println(timeNow.getDateTimeNowToStr());
-
         // вывод всех сотрудников на экран
+        System.out.println();
+        System.out.println("-=< СПИСОК ВСЕХ СОТРУДНИКОВ >=-");
         dataModule.printListStaffAll();
 
-        Date d = new Date();
-        d = null;
-        if (d == null) {
-            System.out.print("Date = null");
-        }
+        dataModule.showCheckPointLogAll(dataModule, 1);
+        dataModule.showCheckPointLogAll(dataModule, 2);
+
     }
 }
