@@ -42,7 +42,7 @@ public class CheckPointLogRec {
         // вначале ищем, есть ли уже запись с кодом сотрудника cardStaff в журнале посещений
         // где не заполнено поле "dateTimeOut", т.е. время выхода с работы
         // если не заполнено - ошибка! повторный вход без предыдущего выхода...
-        //if (LogRec.searchIDStaffDateTimeOutNull(CheckPointLogRec LogRec, DataModule dataModule) == -1) {}
+        // if (logRec.searchIDStaffDateTimeOutNull(CheckPointLogRec logRec, DataModule dataModule) == -1) {}
         // если заполнено или не нашли, значит все ок,
         // создаем новую запись в журнале посещений с открытым полем "dateTimeOut-выход"
         dataModule.checkPointLogRecs.add(logRec);
