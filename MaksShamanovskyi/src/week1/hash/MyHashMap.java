@@ -232,7 +232,7 @@ public class MyHashMap<K,V> implements Map<K,V> {
         V value;
         Bucket<K,V> next;
 
-        public Bucket(K key, V value, Bucket next) {
+        public Bucket(K key, V value, Bucket<K,V> next) {
             this.key = key;
             this.value = value;
             this.next = next;
