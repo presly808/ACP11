@@ -20,8 +20,11 @@ public class RunCheckpoint {
         System.out.println("-=< СПИСОК ВСЕХ СОТРУДНИКОВ >=-");
         dataModule.printListStaffAll();
 
-        dataModule.showCheckPointLogAll(dataModule, 1);
-        dataModule.showCheckPointLogAll(dataModule, 2);
+        // typeSort { 1 - сортировка по возрастанию дат, 2 - обратная сотрировка}
+        int typeSort = 1;
+        dataModule.showCheckPointLogAll(dataModule, typeSort);
+        //typeSort = 2;
+        //dataModule.showCheckPointLogAll(dataModule, typeSort);
 
     }
 }
