@@ -58,7 +58,6 @@ public class DataModule {
         d2 = new Date();
         d1.setTime(d1.getTime()-10000000);
         checkPointLogRecs.add(new CheckPointLogRec("0003", d1, null) );
-
     }
 
     // вывод всех сотрудников на экран
