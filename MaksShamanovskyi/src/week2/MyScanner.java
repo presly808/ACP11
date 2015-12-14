@@ -1,12 +1,15 @@
 package week2;
 
 import java.io.*;
+import java.util.NoSuchElementException;
 
 public class MyScanner implements IScanner{
-    private char[] buff = new char[1024];
-    private int index = 0;
+    private char[] buff = new char[8];
+    private int end = 0;
+    private int start = 0;
     private Reader reader;
     private boolean closed = false;
+    private char[] delimiter = {' '};
 
     public MyScanner(String text){
         reader = new StringReader(text);
@@ -25,35 +28,38 @@ public class MyScanner implements IScanner{
 
     private void writeToBuff(){
         try {
-            int temp = 0;
-            for (;index < buff.length;) {
-                temp = reader.read();
-                if(temp == -1){
-                    break;
-                }
-                buff[index++] = (char) temp;
+            reader.mark(buff.length);
+            end = reader.read(buff);
+            if(reader.read() == -1){
+                close();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private boolean checkBuffer(){
-        if(index == buff.length){
-            index = 0;
+    private void checkBuffer(){
+        if(end == buff.length){
+            start = 0;
+            end = 0;
             writeToBuff();
-            return true;
         }
-        return false;
     }
 
     @Override
     public String nextLine() {
-        String res = "";
-        for (int i = 0; i < index; i++) {
-            res += buff[i];
+        if(!hasNext()){
+            throw new NoSuchElementException();
         }
-        if(checkBuffer()){
+        String res = "";
+        for (; start < end;) {
+            res += buff[start++];
+        }
+        if(start == end){
+            if(closed){
+                return res;
+            }
+            checkBuffer();
             return res + nextLine();
         }
         return res;
@@ -61,7 +67,19 @@ public class MyScanner implements IScanner{
 
     @Override
     public String next() {
-        return null;
+        if(!hasNext()){
+            throw new NoSuchElementException();
+        }
+        String res = "";
+        for(;buff[start] != delimiter[0] && start < end; start++) {
+            res += buff[start];
+        }
+        start += delimiter.length;
+        if(start == end){
+            checkBuffer();
+            return res + next();
+        }
+        return res;
     }
 
     @Override
@@ -71,6 +89,9 @@ public class MyScanner implements IScanner{
 
     @Override
     public boolean hasNext() {
+        if(buff[start] != '\u0000'){
+            return true;
+        }
         return false;
     }
 
@@ -81,11 +102,18 @@ public class MyScanner implements IScanner{
 
     @Override
     public void useDelimiter(String delimiter) {
-
+        this.delimiter = delimiter.toCharArray();
     }
 
     @Override
     public void close() {
-
+        try {
+            if(!closed) {
+                closed = true;
+                reader.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
