@@ -30,7 +30,7 @@ public class MyScanner implements IScanner{
         try {
             reader.mark(buff.length);
             end = reader.read(buff);
-            if(reader.read() == -1){
+            if(end < buff.length){
                 close();
             }
         } catch (IOException e) {
@@ -71,11 +71,11 @@ public class MyScanner implements IScanner{
             throw new NoSuchElementException();
         }
         String res = "";
-        for(;buff[start] != delimiter[0] && start < end; start++) {
+        for(;start < end && buff[start] != delimiter[0]; start++) {
             res += buff[start];
         }
         start += delimiter.length;
-        if(start == end){
+        if(start >= end){
             checkBuffer();
             return res + next();
         }
