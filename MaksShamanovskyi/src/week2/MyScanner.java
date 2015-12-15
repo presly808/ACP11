@@ -21,11 +21,6 @@ public class MyScanner implements IScanner{
         writeToBuff();
     }
 
-    public MyScanner(InputStream inputStream){
-        reader = new InputStreamReader(inputStream);
-        writeToBuff();
-    }
-
     private void writeToBuff(){
         try {
             reader.mark(buff.length);
@@ -89,15 +84,21 @@ public class MyScanner implements IScanner{
 
     @Override
     public boolean hasNext() {
-        if(buff[start] != '\u0000'){
-            return true;
-        }
-        return false;
+        return buff[start] != delimiter[0] || buff[start] != '\u0000';
     }
 
     @Override
     public boolean hasNextInt() {
-        return false;
+        int index = start;
+        if(hasNext()) {
+            for (; buff[index] != delimiter[0] && buff[index] != '\u0000'; ) {
+                if (buff[index] < '\u0030' || buff[index] > '\u0039') {
+                    return false;
+                }
+                index++;
+            }
+        }
+        return true;
     }
 
     @Override
