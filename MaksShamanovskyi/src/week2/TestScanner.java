@@ -3,6 +3,7 @@ package week2;
 public class TestScanner {
     public static void main(String[] args) {
 
+        //todo wxtract test logic to junit test
         IScanner scanner = new MyScanner("some text for example");
 
         System.out.println(scanner.hasNext() ?  "hasNext is working" : "false");
