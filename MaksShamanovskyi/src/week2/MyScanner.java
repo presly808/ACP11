@@ -23,7 +23,6 @@ public class MyScanner implements IScanner{
 
     private void writeToBuff(){
         try {
-            reader.mark(buff.length);
             end = reader.read(buff);
             if(end < buff.length){
                 close();
@@ -79,11 +78,26 @@ public class MyScanner implements IScanner{
 
     @Override
     public int nextInt() {
-        return 0;
+//        if(!hasNextInt()){
+//            throw new NoSuchElementException();
+//        }
+       String res = "";
+        for(;start < end && buff[start] != delimiter[0]; start++) {
+            res += buff[start];
+        }
+        start += delimiter.length;
+        if(start >= end){
+            checkBuffer();
+            return Integer.parseInt("" + res + nextInt());
+        }
+        return Integer.parseInt(res);
     }
 
     @Override
     public boolean hasNext() {
+        if(start >= end && end < buff.length){
+            return false;
+        }
         return buff[start] != delimiter[0] || buff[start] != '\u0000';
     }
 
