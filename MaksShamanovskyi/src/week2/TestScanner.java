@@ -12,6 +12,7 @@ public class TestScanner {
         assertTrue(sc1.hasNext());
     }
 
+
     @Test
     public void testNext(){
         assertTrue(sc1.next().equals("some"));
