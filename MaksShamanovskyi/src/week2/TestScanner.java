@@ -1,24 +1,41 @@
 package week2;
 
+import static org.junit.Assert.*;
+import org.junit.Test;
+
 public class TestScanner {
-    public static void main(String[] args) {
+    IScanner sc1 = new MyScanner("some text for test");
+    IScanner sc2 = new MyScanner("11111 222a2");
 
-        IScanner scanner = new MyScanner("some text for example");
+    @Test
+    public void testHasNext(){
+        assertTrue(sc1.hasNext());
+    }
 
-        System.out.println(scanner.hasNext() ?  "hasNext is working" : "false");
-        System.out.println(scanner.next().equals("some") ?  "next is working" : "false");
-        System.out.println(scanner.hasNext() ?  "hasNext is working" : "false");
-        System.out.println(scanner.next().equals("text") ?  "next is working" : "false");
-        System.out.println(scanner.nextLine().equals("for example") ?  "nextLine is working" : "false");
-        System.out.println(scanner.hasNext() ?  "something wrong" : "hasNext is working");
+    @Test
+    public void testNext(){
+        assertTrue(sc1.next().equals("some"));
+    }
 
-        System.out.println("**************************");
-        IScanner scanner1 = new MyScanner("1234567890 text");
-        System.out.println(scanner1.hasNextInt() ?  "hasNext is working" : "false");
-        System.out.println(scanner1.nextInt() == 1234567890 ?  "nextInt is working" : "false");
-        System.out.println(scanner1.hasNextInt() ?  "something wrong" : "hasNextInt is working");
+    @Test
+    public void testNextLine(){
+        sc1.next();
+        assertTrue(sc1.nextLine().equals("text for test"));
+    }
 
+    @Test
+    public void testHasNextInt(){
+        assertTrue(sc2.hasNextInt());
+    }
 
+    @Test
+    public void testNextInt(){
+        assertTrue(sc2.nextInt() == 11111);
+    }
 
+    @Test
+    public void testFalseNextInt(){
+        sc2.nextInt();
+        assertFalse(sc2.hasNextInt());
     }
 }

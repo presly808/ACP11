@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.NoSuchElementException;
 
 public class MyScanner implements IScanner{
-    private char[] buff = new char[8];
+    private char[] buff = new char[1024];
     private int end = 0;
     private int start = 0;
     private Reader reader;
@@ -78,10 +78,10 @@ public class MyScanner implements IScanner{
 
     @Override
     public int nextInt() {
-//        if(!hasNextInt()){
-//            throw new NoSuchElementException();
-//        }
-       String res = "";
+        if(!hasNextInt()){
+            throw new NoSuchElementException();
+        }
+        String res = "";
         for(;start < end && buff[start] != delimiter[0]; start++) {
             res += buff[start];
         }
