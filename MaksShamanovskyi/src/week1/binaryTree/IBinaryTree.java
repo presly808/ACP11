@@ -1,6 +1,6 @@
 package week1.binaryTree;
 
-public interface IBinaryTree<E> {
+public interface IBinaryTree<E> extends Iterable<E> {
 
     boolean add(E element);
 

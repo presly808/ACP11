@@ -131,12 +131,17 @@ public class BinaryTree<E extends Comparable> implements IBinaryTree<E> {
         return foundNode;
     }
 
-    public Iterator getIterator(){
+    public Iterator<E> getIterator(){
+        return new TreeIterator();
+    }
+
+    @Override
+    public Iterator<E> iterator() {
         return new TreeIterator();
     }
 
 
-    private class TreeIterator implements Iterator<Node<E>>{
+    private class TreeIterator implements Iterator<E>{
         Node<E> curr = findMin(root);
 
 
@@ -146,7 +151,7 @@ public class BinaryTree<E extends Comparable> implements IBinaryTree<E> {
         }
 
         @Override
-        public Node<E> next() {
+        public E next() {
             Node<E> iter = curr;
             if(curr.rightChild != null){
                 curr = findMin(curr.rightChild);
@@ -160,7 +165,7 @@ public class BinaryTree<E extends Comparable> implements IBinaryTree<E> {
                     curr = curr.parent;
                 }
             }
-            return iter;
+            return iter.value;
         }
     }
 
