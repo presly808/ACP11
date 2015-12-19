@@ -2,11 +2,14 @@ package week_02;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * Created by DNK on 17.12.2015.
  */
 public class MyScanner {
+    char myBuffer [] = new char[64];
+    int curPos;
 
     public static void readStreamByte(InputStream inSt) throws IOException {
         while (true) {
