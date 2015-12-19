@@ -11,12 +11,12 @@ public class MyScanner {
     public static void readStreamByte(InputStream inSt) throws IOException {
         while (true) {
             int oneByte = inSt.read();
-            // если не конец файла
+            // РµСЃР»Рё РЅРµ РєРѕРЅРµС† С„Р°Р№Р»Р°
             if (oneByte != -1) {
-                // выводим 1 символ
+                // РІС‹РІРѕРґРёРј 1 СЃРёРјРІРѕР»
                 System.out.print((char) oneByte);
             }
-            // если дошли до конца файла
+            // РµСЃР»Рё РґРѕС€Р»Рё РґРѕ РєРѕРЅС†Р° С„Р°Р№Р»Р°
             else {
                 System.out.print("\n" + "end stream");
                 break;
