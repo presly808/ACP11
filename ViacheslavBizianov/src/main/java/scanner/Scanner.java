@@ -2,6 +2,7 @@ package scanner;
 
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 public class Scanner {
@@ -35,6 +36,7 @@ public class Scanner {
 
     public boolean hasNextInt(){
         checkScannerOpened();
+        int res = 1;
         try {
             while (reader.read(buff,pos++,1) != -1){
                 if (buff[pos-1] >= '0' && buff[pos-1] <= '9'){

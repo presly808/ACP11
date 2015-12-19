@@ -23,7 +23,6 @@ public class DataOutputClass {
 
     DataInput dataInput = new DataInputStream(inputStream);
 
-        dataInput.
 
     }
 
