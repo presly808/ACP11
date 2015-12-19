@@ -1,4 +1,4 @@
-package week1.binaryTree;
+package main.week1.binaryTree;
 
 import java.util.Iterator;
 

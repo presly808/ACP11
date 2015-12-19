@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class TestIoMethods {
 
 
-    public static final String PATH = "/home/serhii/dev/IdeaProjects/ACP11/home/week1.txt";
+    public static final String PATH = "/home/serhii/dev/IdeaProjects/ACP11/home/main.week1.txt";
 
     public static void main(String[] args) throws FileNotFoundException {
         int[] mas = IOMethodContainer.readFileContent(

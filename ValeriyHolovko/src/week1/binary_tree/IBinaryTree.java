@@ -1,4 +1,4 @@
-package week1.binary_tree;
+package main.week1.binary_tree;
 
 import java.util.NoSuchElementException;
 
