@@ -1,8 +1,6 @@
-package week2;
+package ua.artcode.week2;
 
-import java.util.Scanner;
-
-public interface IScanner{
+public interface IScanner {
 
     String nextLine();
 

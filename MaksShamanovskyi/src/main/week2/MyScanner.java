@@ -1,4 +1,4 @@
-package week2;
+package main.week2;
 
 import java.io.*;
 import java.util.NoSuchElementException;
@@ -46,7 +46,7 @@ public class MyScanner implements IScanner{
             throw new NoSuchElementException();
         }
         String res = "";
-        for (; start < end;) {
+        for (;buff[start] != '\n' && start < end;) {
             res += buff[start++];
         }
         if(start == end){
@@ -88,6 +88,7 @@ public class MyScanner implements IScanner{
         start += delimiter.length;
         if(start >= end){
             checkBuffer();
+            hasNextInt();
             return Integer.parseInt("" + res + nextInt());
         }
         return Integer.parseInt(res);
@@ -105,14 +106,15 @@ public class MyScanner implements IScanner{
     public boolean hasNextInt() {
         int index = start;
         if(hasNext()) {
-            for (; buff[index] != delimiter[0] && buff[index] != '\u0000'; ) {
+            for (; buff[index] != delimiter[0] && buff[index] != '\u0000' && buff[index] != end; ) {
                 if (buff[index] < '\u0030' || buff[index] > '\u0039') {
                     return false;
                 }
                 index++;
             }
+            return true;
         }
-        return true;
+        return false;
     }
 
     @Override
