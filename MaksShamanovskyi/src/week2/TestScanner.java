@@ -1,17 +1,18 @@
 package week2;
 
-import static org.junit.Assert.*;
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class TestScanner {
-    IScanner sc1 = new MyScanner("some text for test");
+    IScanner sc1 = new MyScanner("some text\nfor test");
     IScanner sc2 = new MyScanner("11111 222a2");
 
     @Test
     public void testHasNext(){
         assertTrue(sc1.hasNext());
     }
-
 
     @Test
     public void testNext(){
@@ -21,7 +22,7 @@ public class TestScanner {
     @Test
     public void testNextLine(){
         sc1.next();
-        assertTrue(sc1.nextLine().equals("text for test"));
+        assertTrue(sc1.nextLine().equals("text"));
     }
 
     @Test
