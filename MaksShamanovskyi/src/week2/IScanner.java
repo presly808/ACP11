@@ -1,7 +1,5 @@
 package week2;
 
-import java.util.Scanner;
-
 public interface IScanner{
 
     String nextLine();

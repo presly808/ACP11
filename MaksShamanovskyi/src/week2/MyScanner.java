@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.NoSuchElementException;
 
 public class MyScanner implements IScanner{
-    private char[] buff = new char[8];
+    private char[] buff = new char[1024];
     private int end = 0;
     private int start = 0;
     private Reader reader;
@@ -21,14 +21,8 @@ public class MyScanner implements IScanner{
         writeToBuff();
     }
 
-    public MyScanner(InputStream inputStream){
-        reader = new InputStreamReader(inputStream);
-        writeToBuff();
-    }
-
     private void writeToBuff(){
         try {
-            reader.mark(buff.length);
             end = reader.read(buff);
             if(end < buff.length){
                 close();
@@ -52,7 +46,7 @@ public class MyScanner implements IScanner{
             throw new NoSuchElementException();
         }
         String res = "";
-        for (; start < end;) {
+        for (;buff[start] != '\n' && start < end;) {
             res += buff[start++];
         }
         if(start == end){
@@ -84,19 +78,42 @@ public class MyScanner implements IScanner{
 
     @Override
     public int nextInt() {
-        return 0;
+        if(!hasNextInt()){
+            throw new NoSuchElementException();
+        }
+        String res = "";
+        for(;start < end && buff[start] != delimiter[0]; start++) {
+            res += buff[start];
+        }
+        start += delimiter.length;
+        if(start >= end){
+            checkBuffer();
+            hasNextInt();
+            return Integer.parseInt("" + res + nextInt());
+        }
+        return Integer.parseInt(res);
     }
 
     @Override
     public boolean hasNext() {
-        if(buff[start] != '\u0000'){
-            return true;
+        if(start >= end && end < buff.length){
+            return false;
         }
-        return false;
+        return buff[start] != delimiter[0] || buff[start] != '\u0000';
     }
 
     @Override
     public boolean hasNextInt() {
+        int index = start;
+        if(hasNext()) {
+            for (; buff[index] != delimiter[0] && buff[index] != '\u0000' && buff[index] != end; ) {
+                if (buff[index] < '\u0030' || buff[index] > '\u0039') {
+                    return false;
+                }
+                index++;
+            }
+            return true;
+        }
         return false;
     }
 
