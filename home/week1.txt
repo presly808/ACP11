@@ -108,7 +108,7 @@ Some helpful notes of algorithms and datastrucutres
    	Recursion intro. https://github.com/presly808/ACO8/tree/master/src/ua/artcode/recursion/tree/company
 
    2. Implement Map interface based on hashtable
-                   see example  https://github.com/presly808/ACP9/blob/master/src/main/java/ua/artcode/week1/hashstructure/MyHashMap.java
+                   see example  https://github.com/presly808/ACP9/blob/master/src/main/java/ua/artcode/main.week1/hashstructure/MyHashMap.java
       Must use: Generics, Exceptions,
                    loadFactor(rehashing)
                    implement Iterator (for keys and values)
@@ -116,7 +116,7 @@ Some helpful notes of algorithms and datastrucutres
                 !Your type that you put in map as key must override (equals, hashCode)
 
 
-   3*. Implement BinarySearchTree https://github.com/presly808/ACP9/blob/master/src/main/java/ua/artcode/week1/tree/BST.java
+   3*. Implement BinarySearchTree https://github.com/presly808/ACP9/blob/master/src/main/java/ua/artcode/main.week1/tree/BST.java
        methods
        - add
        - traverse
