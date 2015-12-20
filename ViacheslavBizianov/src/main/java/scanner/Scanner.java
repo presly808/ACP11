@@ -36,6 +36,7 @@ public class Scanner {
 
     public boolean hasNextInt(){
         checkScannerOpened();
+        int start, end; //begin and end of int
         int res = 1;
         try {
             while (reader.read(buff,pos++,1) != -1){
