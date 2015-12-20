@@ -1,0 +1,7 @@
+<company><!-- root element -->
+    <user id="1"> <!-- element - tag -->
+        <name>serhii</name>
+        <age>24</age>
+        <phone>30932312129</phone>
+    </user>
+</company>
