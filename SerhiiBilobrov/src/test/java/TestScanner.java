@@ -1,12 +1,10 @@
 import org.junit.*;
-import ua.artcode.week2.IScanner;
-import ua.artcode.week2.Scanner;
 
 import java.util.NoSuchElementException;
 
 public class TestScanner {
 
-    private IScanner scanner;
+    private week2.IScanner scanner;
     private static String testName = "default for all test";
 
     @Before

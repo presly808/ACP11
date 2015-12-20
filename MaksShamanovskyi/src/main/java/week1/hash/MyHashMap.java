@@ -1,4 +1,4 @@
-package main.week1.hash;
+package week1.hash;
 
 import java.util.*;
 

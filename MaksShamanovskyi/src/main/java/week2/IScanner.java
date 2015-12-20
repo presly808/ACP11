@@ -1,4 +1,4 @@
-package main.week2;
+package week2;
 
 public interface IScanner{
 

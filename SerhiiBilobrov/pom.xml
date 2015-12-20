@@ -15,5 +15,13 @@
     <artifactId>serhii-bilobrov</artifactId>
     <version>1.0</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>ua.artcode</groupId>
+            <artifactId>maks-shamanovskyi</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

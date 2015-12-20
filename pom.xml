@@ -14,6 +14,12 @@
 
     <modules>
         <module>SerhiiBilobrov</module>
+        <module>ArturFeoktystov</module>
+        <module>ValeriyHolovko</module>
+        <module>YanchevskayaAnna</module>
+        <module>YuriyDidenko</module>
+        <module>ViacheslavBizianov</module>
+        <module>MaksShamanovskyi</module>
     </modules>
 
     <dependencies>
