@@ -1,15 +1,21 @@
 import org.junit.*;
 
+import week2.*;
 import java.util.NoSuchElementException;
 
-public class TestScanner {
+@Ignore
+public class BaseTestScanner {
 
-    private week2.IScanner scanner;
+    private IScanner scanner;
     private static String testName = "default for all test";
+
+    public BaseTestScanner(IScanner scanner) {
+        this.scanner = scanner;
+    }
 
     @Before
     public void setUp(){
-        scanner = new Scanner("22 line1\nline2");
+
     }
 
     @After
@@ -36,7 +42,6 @@ public class TestScanner {
     }
 
     @Test
-    @Ignore
     public void nextInt(){
         Assert.assertEquals(22, scanner.nextInt());
     }
