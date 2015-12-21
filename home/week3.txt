@@ -1,0 +1,49 @@
+1. 	TDD 
+	JUnit(@Test, Ignore, Before,After, BeforeClass, AfterClass, Assert)	
+
+	System Variables (JAVA_HOME, PATH)
+	
+	Maven - build tool
+		Project Structures
+		pom.xml
+			
+		local repo .m2
+
+		Main Lifecycles
+			clean,validate,compile,test,package,install,deploy
+
+		Hierachy - inheritance(<parent>), aggreagation(<modules>)
+
+	XML - DTD,XSD
+	DOM
+
+	see parsers - DOM parser, SAX parser
+	examples: https://github.com/presly808/ACP7/blob/8e6200893315c50fa3c78a58587e2044cc9b4e84/SerhiiBilobrov/src/main/java/ua/artcode/week6/dom/DomParsingUtils.java
+
+	https://github.com/presly808/ACP5/blob/3ec8dde49fd964f19597e01929a95c1d672b227b/src/main/java/ua/artcode/week4/day1/xml/SaxParserTest.java
+
+2.!!!!! FINISH TASK codecademy command line!!!!!!!
+
+
+3. Via XmlDomParser write serializer that convert:
+	obj -> xml and xml -> obj
+
+4. Download file from internet using URL class(openStream method)
+
+5. Write universal downloader from ex.ua (That helps us download all files from page) - use gsoup library
+       1. First input url address of page
+       2. then parse page and find urls like "/load/{idOfFile}" ex. href="/load/124701188" 
+       3. Take url and download file using URL class
+
+6. Create client database using vk searching https://vk.com/search
+	Main search criteries (country - Ukraine, city - Kiev, age - 14-35)
+	Other key words (we will define some words, example [it,java,kpi,nau,programming,game,gaming])
+
+1) find people by main criteries via vk search
+2) open every page, and look for key word
+3) if we find at least 3 words -> grab all importand info	
+	vk id or page reference, Name, Contacts, age, birthsday, education, work
+4) save results into file(json) using gson library
+
+
+
