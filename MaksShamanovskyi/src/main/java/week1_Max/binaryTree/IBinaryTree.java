@@ -1,4 +1,4 @@
-package week1.binaryTree;
+package week1_Max.binaryTree;
 
 public interface IBinaryTree<E> extends Iterable<E> {
 

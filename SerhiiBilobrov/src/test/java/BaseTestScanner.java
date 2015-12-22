@@ -1,6 +1,8 @@
 import org.junit.*;
 
 import week2.*;
+import week2_Max.IScanner;
+
 import java.util.NoSuchElementException;
 
 @Ignore

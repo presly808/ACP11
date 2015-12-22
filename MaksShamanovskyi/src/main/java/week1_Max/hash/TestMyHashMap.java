@@ -1,4 +1,4 @@
-package week1.hash;
+package week1_Max.hash;
 
 import java.util.Iterator;
 
