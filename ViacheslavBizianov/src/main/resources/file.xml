@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object>
+ <name>Vasia</name>
+ <age>27</age>
+ <books>
+  <book id="0">
+   <author>author1</author>
+   <title>title1</title>
+  </book>
+  <book id="1">
+   <author>author2</author>
+   <title>title2</title>
+  </book>
+  <book id="2">
+   <author>author3</author>
+   <title>title3</title>
+  </book>
+ </books>
+</object>
