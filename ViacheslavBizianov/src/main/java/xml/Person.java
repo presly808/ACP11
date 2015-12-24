@@ -1,9 +1,11 @@
 package xml;
 
+import org.w3c.dom.Document;
+
 /**
  * Created by slava23 on 12/22/2015.
  */
-public class Person {
+public class Person /*implements XMLBinded*/ {
 
     private String name;
     private int age;
@@ -25,5 +27,9 @@ public class Person {
 
     public Book[] getBooks() {
         return books;
+    }
+
+    public Document structure(){
+        return null;
     }
 }
