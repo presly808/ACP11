@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class ExDownloader {
 
-    public static void downloadAllFiles(String path){
+    public void downloadAllFiles(String path){
         try {
             //get the link
             Document doc = Jsoup.connect(path).get();
