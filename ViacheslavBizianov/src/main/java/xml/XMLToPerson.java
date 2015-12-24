@@ -7,14 +7,15 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class XMLToPerson {
 
     private String name;
     private int age;
-    public ArrayList<Book> books = new ArrayList<>(10);
+    public List<Book> books = new ArrayList<>(10);
 
-    public String convertXMLToPerson(Element curr) throws ParserConfigurationException, IOException, SAXException {
+    public String convertXMLToPerson(Element curr/*, TreeStructure tree*/) throws ParserConfigurationException, IOException, SAXException {
 
         String currAuth = "";
         String currTitle = "";

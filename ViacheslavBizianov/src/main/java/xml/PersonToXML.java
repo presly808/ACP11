@@ -1,5 +1,12 @@
 package xml;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import utils.ClassPathResourceLoader;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 
 /**
@@ -7,7 +14,14 @@ import java.io.*;
  */
 public class PersonToXML {
 
-    public static void savePersonToXML(Person person) throws IOException {
+    public static void savePersonToXML(Person person) throws IOException, ParserConfigurationException {
+
+        DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+
+        Document document = documentBuilder.newDocument();
+        Element root = document.createElement("object");
+//        root.appendChild()
+
 
         StringBuilder sb = new StringBuilder();
 
@@ -30,7 +44,7 @@ public class PersonToXML {
         sb.append("</object>\n");
 
         FileWriter writer =
-                new FileWriter("C:\\Users\\slava23\\ACP11\\ViacheslavBizianov\\src\\main\\resources\\file.xml");
+                new FileWriter(ClassPathResourceLoader.load("/file.xml"));
 
         writer.write(sb.toString());
         writer.flush();
