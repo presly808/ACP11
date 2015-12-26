@@ -2,17 +2,18 @@ package ua.artcode.home.week4;
 
 import java.util.List;
 
-/**
- * Created by serhii on 26.12.15.
- */
 public class User {
 
     protected static int count;
 
+    @ForSave
     public int id;
-    int age;
-    String name;
-    String phone;
+    @ForSave
+    public int age;
+    @ForSave
+    public String name;
+    @ForSave
+    public String phone;
     private List<String> addresses;
 
     private Car car;
@@ -90,4 +91,20 @@ public class User {
                 ", car=" + car +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user = (User) o;
+
+        if (id != user.id) return false;
+        if (age != user.age) return false;
+        if (name != null ? !name.equals(user.name) : user.name != null) return false;
+        return !(phone != null ? !phone.equals(user.phone) : user.phone != null);
+
+    }
+
+
 }

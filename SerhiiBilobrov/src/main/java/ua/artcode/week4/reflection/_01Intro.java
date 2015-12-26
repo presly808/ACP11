@@ -15,6 +15,8 @@ public class _01Intro {
                 ReflectionUtils.getFieldsValue(
                         user));
 
+        System.out.println(ReflectionUtils.getTypeInfo(user));
+
         System.out.println(ReflectionUtils.callMethod(
                 user, "setCar", new Car("2122", "toyota", 250)));
 
@@ -23,6 +25,7 @@ public class _01Intro {
 
         try {
             Class cl = Class.forName("ua.artcode.home.week4.Car");
+            cl.getTypeParameters();
             Car car = (Car) cl.newInstance(); // must have default constructor
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
