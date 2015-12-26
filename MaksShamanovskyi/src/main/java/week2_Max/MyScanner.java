@@ -1,4 +1,4 @@
-package week2;
+package week2_Max;
 
 import java.io.*;
 import java.util.NoSuchElementException;

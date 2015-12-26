@@ -1,6 +1,6 @@
-package week2;
-
 import org.junit.Test;
+import week2_Max.IScanner;
+import week2_Max.MyScanner;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
