@@ -5,11 +5,14 @@ import java.io.File;
 
 public class TestExDownloader {
     private static ExDownloader ex;
-    private File file = new File("C:\\Users\\Макс\\TEST");
+    private static File file;
 
     @BeforeClass
     public static void setUpClass(){
+        String home = System.getProperties().getProperty("user.home");
+        String delimiter = System.getProperties().getProperty("file.separator");
         ex = new ExDownloader("http://www.ex.ua/96198355?r=28712,23776");
+        file = new File(home + delimiter + "TEST");
     }
 
     @AfterClass
@@ -19,23 +22,27 @@ public class TestExDownloader {
 
     @Before
     public void setUp(){
-        file.mkdir();
+        if(!file.exists()) {
+            file.mkdir();
+        }
     }
 
     @After
     public void tearDown(){
-        file.delete();
+        if(file.exists()) {
+            file.delete();
+        }
     }
 
     @Test
     public void isFiles(){
-        ex.downloadAllFiles("C:\\Users\\Макс\\TEST");
+        ex.downloadAllFiles(file.getPath());
         Assert.assertTrue(file.list().length > 0);
     }
 
     @Test
     public void isFilesLength(){
-        ex.downloadAllFiles("C:\\Users\\Макс\\TEST");
+        ex.downloadAllFiles(file.getPath());
         Assert.assertTrue(file.length() > 4000);
     }
 }
