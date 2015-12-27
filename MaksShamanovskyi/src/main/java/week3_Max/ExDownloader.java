@@ -54,10 +54,11 @@ public class ExDownloader {
     }
 
     public void downloadAllFiles(String FilePath) {
+        String delimiter = System.getProperties().getProperty("file.separator");
         try {
             for (int i = 0; i < uniqueLink.size(); i++) {
                 ReadableByteChannel channel = Channels.newChannel(urls.get(i).openStream());
-                FileOutputStream fileStream = new FileOutputStream(new File(FilePath + "\\" + uniqueName.get(i)));
+                FileOutputStream fileStream = new FileOutputStream(new File(FilePath + delimiter + uniqueName.get(i)));
                 fileStream.getChannel().transferFrom(channel, 0, Long.MAX_VALUE);
             }
         } catch (IOException e) {
