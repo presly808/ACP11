@@ -14,59 +14,93 @@ import java.util.*;
  */
 public class ServerRun {
 
-    private static int count = 1;
-    private static List<String> history = new LinkedList<>();
-    private static long start = System.currentTimeMillis();
+
 
     public static void main(String[] args) throws IOException {
         //192.168.1.55 8888
         // telnet 192.168.1.55 8888
-        ServerSocket serverSocket = new ServerSocket(8888);
-
-        System.out.println("START SERVER");
-        while (System.currentTimeMillis() - start < 20000) {
-
-            Socket client = serverSocket.accept(); // wait for clients, blocking method
-            PrintWriter output = new PrintWriter(client.getOutputStream());
-            Scanner input = new Scanner(client.getInputStream());
-
-            output.println("Hi from server, your number is "
-                    + count + ", time" + new Date().toString());
-            output.flush();
-
-            String message = client.getInetAddress().toString() + " " + input.nextLine();
-
-            history.add(message);
-            System.out.println(message);
-        }
-
-
-        String res = String.join("\n", history);
-        runCommand("cd ~ && echo \"" + res + "\" > result.txt");
-
+        new Thread(new ServerThread()).start();
 
 
     }
 
-    public static void runCommand(String command){
+}
+
+class ServerThread implements Runnable {
+
+    private static int count = 1;
+    public final static List<String> HISTORY = new LinkedList<>();
+    private static long start = System.currentTimeMillis();
+
+    @Override
+    public void run() {
+
+        ServerSocket serverSocket = null;
         try {
-            Process process = Runtime.getRuntime().exec(command);
-            int res = process.waitFor();
+            serverSocket = new ServerSocket(8888);
+            System.out.println("Server started");
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new Error("Can not run server");
+        }
 
-            if(res == 0){
-                System.out.println("Success");
-                System.out.println(IOUtils.toString(process.getInputStream()));
-            } else {
-                System.out.println("Failed");
-                System.err.println(IOUtils.toString(process.getInputStream()));
+        try {
+            while(true){
+                Socket client = serverSocket.accept();
+                Thread th = new Thread(new ClientThread(client, count++)); //
+                th.start();// start new thread , non blocking
+                System.out.println("started new client " + client.getInetAddress());
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
 
+class ClientThread implements Runnable {
+
+    private Socket socket;
+    private int count;
+    private int readCount;
+
+    public ClientThread(Socket socket, int count) {
+        this.socket = socket;
+    }
+
+    @Override
+    public void run() {
+
+        try (PrintWriter output = new PrintWriter(socket.getOutputStream());){
+
+            while(true){
+                Scanner input = new Scanner(socket.getInputStream());
+
+                StringBuilder sb = new StringBuilder();
+                if(readCount < ServerThread.HISTORY.size()){
+                    for (;readCount < ServerThread.HISTORY.size(); readCount++) {
+                        sb.append(ServerThread.HISTORY.get(readCount)).append("");
+                    }
+                }
+                output.println(sb.toString());
+                output.flush();
+
+
+                output.println("Hi from server, your number is "
+                        + count + ", time" + new Date().toString());
+                output.flush();
+
+                String contentFromClient = input.hasNextLine() ? input.nextLine() : "no response from client";
+                String message = socket.getInetAddress() + " " + contentFromClient;
+
+                ServerThread.HISTORY.add(message);
+                readCount++;
+
+                System.out.println(message);
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
-    }
 
+    }
 }
