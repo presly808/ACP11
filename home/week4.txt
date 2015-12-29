@@ -1,0 +1,59 @@
+1. Metadata 
+	Annotation
+		create, use, process
+
+	Reflection(RTTI)
+
+2. Serialization using reflection
+        (Save only those fields that were annotated by @ForSave Annotation, first create @ForSave)
+        Use getters, don't break encapsulation
+
+3. Implement xml serializer via reflection, use above task
+   Object -> XML
+   XML -> Object
+
+   use Dom parser
+
+4. Implements own Java console based on above task or improve same task from OOP course
+   	use MVC pattern, draw ulm diagram, can use Apache Commons IO
+
+    command structure
+   	<command_name> [options...] [<arg1> <arg2> <...>]
+
+   	to get brief description
+    	<command> --help
+
+   	full manual
+   	man <command>
+
+   	Implements next commands
+   		man
+   		help
+
+   		pwd
+   		ls
+   		ls with options [-al]
+   		cd
+
+   		cat
+   		head
+   		tail
+
+   		mkdir
+   		touch
+
+   		cp
+   		mv
+   		rm
+
+4.1. Do remote control for "Java console"(ServerSocket, Socket)
+    - must be login process
+    - save session information(user name, session duration, history)
+    - add possibility to call system any commands via Runtime class or use library (Apache Commons)
+
+5. https://www.youtube.com/user/KharkovITCourses/playlists?shelf_id=10&view=50&sort=dd
+    see videos about Threads
+
+6*. Try to build asynchronous chat for many users using threads
+
+
