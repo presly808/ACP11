@@ -20,6 +20,7 @@ public class TestExDownloader {
         ex = null;
     }
 
+
     @Before
     public void setUp(){
         if(!file.exists()) {
@@ -28,10 +29,14 @@ public class TestExDownloader {
     }
 
     @After
-    public void tearDown(){
-        if(file.exists()) {
-            file.delete();
+    public void tearDown() throws Exception {
+        File[] files = file.listFiles();
+        for (File e : files) {
+            if(e.isFile()){
+                e.delete();
+            }
         }
+        file.delete();
     }
 
     @Test

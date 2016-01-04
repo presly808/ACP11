@@ -1,41 +1,68 @@
 package week4_Max.day1;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ObjStringConverter {
 
 
     public static String toString(Object obj){
         Class cl = obj.getClass();
-
         StringBuilder sb = new StringBuilder();
-
         sb.append("type=" + cl.getName()).append("\n");
-        Field[] fields = cl.getDeclaredFields();
-
-        for (Field field : fields) {
+        for (Field field : cl.getFields()) {
             try {
                 sb.append(field.getName() + "=" + field.get(obj)).append("\n");
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
         }
-
         return sb.toString();
     }
 
-    public static Object toObj(String str){
-        Scanner sc = new Scanner(str);
-        List<String> listFields = new ArrayList<>();
-        List listArgs = new ArrayList();
-        sc.useDelimiter("=");
-        while(sc.hasNext()){
-            listFields.add(sc.next());
-            listArgs.add(sc.next());
+    public static Object toObject(String src) {
+        Map<String,String> nameValueMap = getFieldNameValueMap(src);
+        try {
+            Class cl = Class.forName(nameValueMap.remove("type"));
+            Object newObj = cl.newInstance();
+            for (String name : nameValueMap.keySet()) {
+                try {
+                    Field field = cl.getField(name);
+                    field.set(newObj, convertTo(nameValueMap.get(name), field.getType()));
+
+                } catch (NoSuchFieldException e) {
+                    e.printStackTrace();
+                }
+            }
+            return newObj;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
+
         return null;
+    }
+
+    private static Object convertTo(String value, Class<?> type) {
+        if(type == int.class){
+            return Integer.parseInt(value);
+        } else if(type == double.class){
+            return Double.parseDouble(value);
+        }
+        return value;
+    }
+
+    private static Map<String,String> getFieldNameValueMap(String src){
+        String[] parts = src.split("\n");
+        Map<String,String> map = new HashMap<>();
+
+        for (String part : parts) {
+            String[] nameValue = part.split("=");
+            map.put(nameValue[0], nameValue[1]);
+        }
+        return map;
     }
 }

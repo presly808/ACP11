@@ -23,7 +23,7 @@ public class TestObjStringConverter {
 
     @Test
     public void StringToObj(){
-        Object user = ObjStringConverter.toObj(string);
+        Object user = ObjStringConverter.toObject(string);
         Assert.assertEquals(obj, user);
     }
 
