@@ -3,13 +3,15 @@ package console.model;
 /**
  * Created by Шкурупий on 08.01.2016.
  */
-public class Command {
+public abstract class Command {
     protected String name;
     private String[] parameters;
     private String[] allowedParameters;
 
     public Command() {
     }
+
+    public void doExec(String[] ... args){};
 
     public String help() {
         String helpString = "";
@@ -20,7 +22,7 @@ public class Command {
         return name;
     }
 
-    public void testReflCall(Integer i) {
+    public void testReflCall() {
         System.out.println("name " + name);
     }
 }

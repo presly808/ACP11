@@ -62,11 +62,13 @@ public class ReflectionUtils {
 
     public static Object callMethod(Object instance, String methodName, Object... args) throws NoSuchMethodException {
         Class cl = instance.getClass();
+        Class[] types = null; //new Class[0];
 
-
-        Class[] types = new Class[args.length];
-        for (int i = 0; i < args.length; i++) {
-            types[i] = args[i].getClass();
+        if ( args.length > 0 ) {
+            types = new Class[args.length];
+            for (int i = 0; i < args.length; i++) {
+                types[i] = args[i].getClass();
+            }
         }
 
         Method method = cl.getMethod(methodName, types);
