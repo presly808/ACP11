@@ -36,7 +36,9 @@ public class Controller {
             for(Command c : this.currentState.getCommands()) {
                 if( commandName.equals(c.getName()) ) {
                     // TODO return (refl call method doExec from class c)
-                    ReflectionUtils.callMethod(c, commandName, uo.get(i).getuArgs());
+                    ReflectionUtils.callMethod(c, "doExec", uo.get(i).getuArgs());
+                    //ReflectionUtils.callMethod(c, "doExec");
+                    //ReflectionUtils.callMethod(c, "testReflCall", uo.get(i).getuArgs());
                     continue;
                 }
             }

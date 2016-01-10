@@ -13,7 +13,7 @@ public class Cd extends Command
         super.name = "cd";
     }
 
-    public void doExec(String[] ... args) {
+    public void doExec(String ... args) {
         System.out.println("OPACHKI! command " + name + "was executed");
     }
 
