@@ -29,20 +29,20 @@ public class Controller {
         // TODO parseUserCommand -> route command throw reflection call;
         ArrayList<UserOrder> uo = parser.parserStrCmd(userCommand);
 
+        boolean isCommandExternal = true;
+
         for (int i = 0; i < uo.size(); i++) {
             String commandName = uo.get(i).getuOrder();
             for(Command c : this.currentState.getCommands()) {
                 if( commandName.equals(c.getName()) ) {
                     // TODO return (refl call method doExec from class c)
                     ReflectionUtils.callMethod(c, commandName, uo.get(i).getuArgs());
-                    return;
+                    continue;
                 }
             }
+
+            ConsoleRun.runExec( commandName, uo.get(i).getuArgs() );
         }
-
-
-        ConsoleRun.runExec(userCommand);
-
 
         askCommand();
     }

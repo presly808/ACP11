@@ -32,7 +32,7 @@ public class ConsoleRun {
         //cRun.runExec();
     }
 
-    public static void runExec(String ... args) throws IOException, InterruptedException {
+    public static void runExec(String commName, String ... args) throws IOException, InterruptedException {
 
         /* ��������� � ������������ ProcessBuilder,
         /* ��� ����� ��������� ��������� ��������� � ����������� */
@@ -40,11 +40,11 @@ public class ConsoleRun {
         //ProcessBuilder procBuilder = new ProcessBuilder("d:\\temp\\createdir.bat");
         //ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", "mkdir d:\\Temp\\333");
         //ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", "rmdir d:\\temp\\333");
-        String command = "";
+        String params = "";
         for (String s : args) {
-            command += " " + s;
+            params += " " + s;
         }
-        ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", command);
+        ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", commName, params);
 
 
         // �������������� ����������� ����� ������ �� ����������� �����
