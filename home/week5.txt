@@ -1,0 +1,44 @@
+1. Multithreading
+
+    see mind map
+    https://drive.google.com/open?id=0B3pUqYFBBsi-WmtMb0JuQWJiM0E
+
+    Multithreading
+
+        Lifecycle of threads
+        synchronized blocks and methods
+        Threads synchronization(wait, notify, notifyAll)
+
+        http://docs.oracle.com/javase/tutorial/essential/concurrency/
+        http://www.periodicooficial.oaxaca.gob.mx/files/2011/05/EXT02-2011-05-19.pdf
+
+
+    all information learn by doing, write notes and draw all steps
+
+    Design Patterns
+        Observer, ProducerConsumer
+
+2. Write own scheduler task
+   That helps to run some task periodically
+
+3. Implement search in file system without recursion (use queue) -> breadth-first search
+
+4. Implement search in file system using (Threads): ThreadPool -> ExecutorService + Callable
+
+5. Implement multithreading downloading from ex.ua using Producer-Consumer pattern
+	Input some key word and start point(url), then start recursive searching
+	When we will find:
+	a) page url, go inside and find other urls in page
+	b) file url ask about downloading(you can stop downloading at any time)
+
+	One threads groups go through pages, other download files
+	pattern ProducerConsumer
+
+6. Implement asynchronous chat that allows communication with two and more users
+        Must have
+        - (saving history of messages into the file)
+        - read connections setting(port, max users size, list of banned users)
+            from server_settings.properties (see class Properties)
+        - send message using Serialization (ObjectOutputStream, ObjectInputStream)
+        - for better architecture of application see pattern Observer
+        - * write UI based on Swing
