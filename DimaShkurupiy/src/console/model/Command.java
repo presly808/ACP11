@@ -11,7 +11,7 @@ public abstract class Command {
     public Command() {
     }
 
-    public void doExec(String[] ... args){};
+    public void doExec(String...args){}
 
     public String help() {
         String helpString = "";

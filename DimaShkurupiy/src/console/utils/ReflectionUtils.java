@@ -71,7 +71,8 @@ public class ReflectionUtils {
             }
         }
 
-        Method method = cl.getMethod(methodName, types);
+//        Method method = cl.getMethod(methodName, types);
+        Method method = cl.getMethod(methodName,String[].class);
 
         try {
             Object object = method.invoke(instance,args);
