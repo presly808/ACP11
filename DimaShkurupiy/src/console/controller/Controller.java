@@ -33,25 +33,14 @@ public class Controller {
             String commandName = uo.get(i).getuOrder();
             for(Command c : this.currentState.getCommands()) {
                 if( commandName.equals(c.getName()) ) {
+                    // TODO return (refl call method doExec from class c)
                     ReflectionUtils.callMethod(c, commandName, uo.get(i).getuArgs());
                     return;
                 }
             }
         }
 
-        //System.out.println( userCommand );
-/*        for(Command c : this.currentState.getCommands()) {
-            if (c.getName().equals(userCommand)) {
-                // TODO return (refl call method doExec from class c)
-                //System.out.println(ReflectionUtils.getTypeInfo(c));
-                //String[] args = {"param","value"};
-                //String[] params = {"",""};
-                ReflectionUtils.callMethod(c, "doExec");
-                //ReflectionUtils.callMethod(c, "testReflCall");
-                return;
-            }
-        }
-*/
+
         ConsoleRun.runExec(userCommand);
 
 
