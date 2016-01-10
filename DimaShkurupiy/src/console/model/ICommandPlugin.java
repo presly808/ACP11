@@ -5,5 +5,5 @@ package console.model;
  */
 public interface ICommandPlugin {
 
-    public String doExec(int i);
+    public void doExec(String[] ... args);
 }
