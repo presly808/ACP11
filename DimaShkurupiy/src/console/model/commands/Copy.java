@@ -13,7 +13,7 @@ public class Copy extends Command
         super.name = "copy";
     }
 
-    public void doExec(String ... args) {
+    public void doExec(String[] args) {
         System.out.println("command " + name + "was executed");
     }
 }

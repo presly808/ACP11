@@ -60,23 +60,17 @@ public class ReflectionUtils {
 
     }
 
-    public static Object callMethod(Object instance, String methodName, Object... args) throws NoSuchMethodException {
+    public static Object callMethod(Object instance, String methodName, String[] args) throws NoSuchMethodException {
         Class cl = instance.getClass();
-        Class[] types = null; //new Class[0];
+        Class type = args.getClass();
 
-        if ( args.length > 0 ) {
-            types = new Class[args.length];
-            for (int i = 0; i < args.length; i++) {
-                types[i] = args[i].getClass();
-            }
-        }
-
-//        Method method = cl.getMethod(methodName, types);
-        Method method = cl.getMethod(methodName,String[].class);
+        Method method = cl.getMethod(methodName,type);
 
         try {
-            Object object = method.invoke(instance,args);
+            Object object = method.invoke(instance,(Object) args);
             return object;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {

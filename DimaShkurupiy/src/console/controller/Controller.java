@@ -6,6 +6,7 @@ import console.view.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Шкурупий on 08.01.2016.
@@ -18,40 +19,30 @@ public class Controller {
     public Controller() throws Exception {
         this.currentState = new CurrentState();
         this.consoleView = new ConsoleView(this.currentState);
-        //testCommandsAccess();
         askCommand();
     }
 
     public void askCommand() throws IOException, InterruptedException, NoSuchMethodException {
+        // TODO make different threads for user input and userCommands stack. show the results of commands and back to waiting user input
         String userCommand = this.consoleView.view();
         StrCmdParser parser = new StrCmdParser();
 
-        // TODO parseUserCommand -> route command throw reflection call;
         ArrayList<UserOrder> uo = parser.parserStrCmd(userCommand);
-
-        boolean isCommandExternal = true;
 
         for (int i = 0; i < uo.size(); i++) {
             String commandName = uo.get(i).getuOrder();
             for(Command c : this.currentState.getCommands()) {
                 if( commandName.equals(c.getName()) ) {
-                    // TODO return (refl call method doExec from class c)
+// TODO add multiThreading  !!!
                     ReflectionUtils.callMethod(c, "doExec", uo.get(i).getuArgs());
-                    //ReflectionUtils.callMethod(c, "doExec");
-                    //ReflectionUtils.callMethod(c, "testReflCall", uo.get(i).getuArgs());
                     continue;
                 }
             }
-
+// TODO Continue issue - this code always run. idea - run ext command throw the plugin class - it seems to be able make multithreading solution
             ConsoleRun.runExec( commandName, uo.get(i).getuArgs() );
         }
 
         askCommand();
     }
 
- /*   public void testCommandsAccess() {
-        for(Command c: currentState.getCommands()){
-            System.out.println(c.getName());
-        }
-    } */
 }

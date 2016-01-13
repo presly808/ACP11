@@ -3,28 +3,25 @@ package console.utils;
 import console.model.UserOrder;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by DNK on 10.01.2016.
- * Разбивает строку на строки с командами и потом выделяет отдельно агрументы
- * возвращает массив объектов класса UserOrder, хранящий набор команд пользователя и их аргументов
  */
 public class StrCmdParser {
 
     public ArrayList<UserOrder> parserStrCmd(String strCmdInput) {
 
-        // объявили результирующий массив
+
         ArrayList<UserOrder> userOrderM = new ArrayList<UserOrder>();
-        // получаем массив команд с параметрами
+
         String [] strCmd = strCmdInput.split("\\|");
-        System.out.println("Count user commands = "+strCmd.length);
-        // отделяем команды от параметров
+        //System.out.println("Count user commands = "+strCmd.length);
+
         for (int i = 0; i < strCmd.length; i++) {
             UserOrder userOrder = new UserOrder();
             String[] strCmdArgs = strCmd[i].split(" ");
             userOrder.setuOrder(strCmdArgs[0]);
-            // создаем массив на одни єлемент меньше, так как первой идет команда, а только потом аргументы
+
             String[] strArgs = new String[strCmdArgs.length - 1];
             for (int j = 0; j < strArgs.length; j++) {
                 strArgs[j] = strCmdArgs[j + 1];
@@ -36,23 +33,24 @@ public class StrCmdParser {
         return userOrderM;
     }
 
+    // TEST THIS CLASS
     public static void main(String[] args) {
 
-        // тестовая строка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         String strCmdInput = "cmd -c |mkdir C:/temp/333|mkdir -f D:/temp/222|dir";
         System.out.println(strCmdInput);
 
-        // объявили результирующий массив
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         ArrayList<UserOrder> userOrderM = new ArrayList<UserOrder>();
-        // получаем массив команд с параметрами
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         String [] strCmd = strCmdInput.split("\\|");
         System.out.println("Count user commands = "+strCmd.length);
-        // отделяем команды от параметров
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         for (int i = 0; i < strCmd.length; i++) {
             UserOrder userOrder = new UserOrder();
             String[] strCmdArgs = strCmd[i].split(" ");
             userOrder.setuOrder(strCmdArgs[0]);
-            // создаем массив на одни єлемент меньше, так как первой идет команда, а только потом аргументы
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             String[] strArgs = new String[strCmdArgs.length-1];
             for (int j = 0; j < strArgs.length; j++) {
                 strArgs[j] = strCmdArgs[j+1];

@@ -13,7 +13,7 @@ public class Dir extends Command {
         super.name = "dir";
     }
 
-    public void doExec(String ... args) {
+    public void doExec(String[] args) {
 
         System.out.println("command " + super.name + "was executed");
 

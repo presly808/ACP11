@@ -1,7 +1,5 @@
 package ua.artcode.week4.reflection;
 
-import ua.artcode.home.week4.Car;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

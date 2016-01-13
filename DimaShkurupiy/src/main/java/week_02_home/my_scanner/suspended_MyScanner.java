@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Created by dima on 14.12.2015.
  */
-public interface MyScanner {
+interface Suspended_MyScanner {
 
 // reading from stream
     public String nextString();

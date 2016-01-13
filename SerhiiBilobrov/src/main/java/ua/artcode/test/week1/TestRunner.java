@@ -1,7 +1,5 @@
 package ua.artcode.test.week1;
 
-import java.util.List;
-
 /**
  * Created by serhii on 06.12.15.
  */

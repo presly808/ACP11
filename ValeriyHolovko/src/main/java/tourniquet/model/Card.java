@@ -1,7 +1,5 @@
 package tourniquet.model;
 
-import java.util.Comparator;
-
 /**
  * Created by 1 on 05.12.2015.
  */

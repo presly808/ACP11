@@ -1,8 +1,6 @@
 package week1.binary_tree;
 
 
-import week1.binary_tree.IBinaryTree;
-
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 

@@ -1,8 +1,6 @@
 package ua.artcode.home.week4;
 
-import java.util.List;
 import java.util.Map;
-import java.util.*;
 
 /**
  * Created by serhii on 26.12.15.
