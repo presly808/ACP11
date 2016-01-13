@@ -7,17 +7,38 @@ import java.util.Scanner;
 /**
  * Created by Шкурупий on 08.01.2016.
  */
-public class ConsoleView {
+public class ConsoleView  implements IView{
     private CurrentState currentState;
+    protected String greetings = "Hello, this is the best ever command line console application. The MS-Dos and Bash console are only the childs, realy, men!\n";
 
     public ConsoleView(CurrentState currentState) {
         this.currentState = currentState;
-        firstStart();
+        initView();
     }
 
-    private void firstStart() {
-        System.out.println("Hello, this is the best ever command line console application.\n " +
-                "The MS-Dos and Bash console are only the childs, realy, men!\n ");
+    @Override
+    public void initView() {
+        System.out.println(greetings);
+    }
+/*
+    @Override
+    public void view() {
+
+    }
+*/
+    @Override
+    public void showOutput(String... str) {
+
+    }
+
+    @Override
+    public String readUserInput() {
+        return null;
+    }
+
+    @Override
+    public void run() {
+
     }
 
     public String view(String...str) {
@@ -28,6 +49,5 @@ public class ConsoleView {
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
-
 
 }

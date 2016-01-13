@@ -7,17 +7,21 @@ public abstract class Command {
     protected String name;
     private String[] parameters;
     private String[] allowedParameters;
+    protected CurrentState currentState;
+    protected String help;
 
-    public Command() {
-    }
+    protected Command() {}
 
-    public String help() {
-        String helpString = "";
-        return helpString;
+    public Command(CurrentState currentState) {
+        this.currentState = currentState;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getHelp() {
+        return help;
     }
 
     public void testReflCall() {

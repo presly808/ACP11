@@ -79,4 +79,21 @@ public class ReflectionUtils {
         return null;
     }
 
+    public static Object callMethodWOParams(Object instance, String methodName) throws NoSuchMethodException {
+        Class cl = instance.getClass();
+        Method method = cl.getMethod(methodName);
+
+        try {
+            Object object = method.invoke(instance);
+            return object;
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

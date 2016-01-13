@@ -22,8 +22,8 @@ public class CurrentState {
     public CurrentState() throws Exception {
         this.commandsClasses = getClasses(Console.class.getClassLoader(),"console/model/commands");
         for(Class c:this.commandsClasses){
-            Constructor constr = c.getConstructor();
-            commands.add((Command) constr.newInstance() );
+            Constructor constr = c.getConstructor(this.getClass());
+            commands.add((Command) constr.newInstance(this) );
         }
 
     }

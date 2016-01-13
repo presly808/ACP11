@@ -39,7 +39,7 @@ public class Controller {
                 }
             }
 // TODO Continue issue - this code always run. idea - run ext command throw the plugin class - it seems to be able make multithreading solution
-            ConsoleRun.runExec( commandName, uo.get(i).getuArgs() );
+//            ConsoleRun.runExec( commandName, uo.get(i).getuArgs() );
         }
 
         askCommand();

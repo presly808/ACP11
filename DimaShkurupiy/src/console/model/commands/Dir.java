@@ -1,6 +1,7 @@
 package console.model.commands;
 
 import console.model.Command;
+import console.model.CurrentState;
 import console.model.ICommandPlugin;
 
 /**
@@ -9,8 +10,10 @@ import console.model.ICommandPlugin;
 public class Dir extends Command {
                     //implements ICommandPlugin {
 
-    public Dir() {
+    public Dir(CurrentState currentState) {
         super.name = "dir";
+        super.currentState = currentState;
+        super.help = "dir (Directory listing)";
     }
 
     public void doExec(String[] args) {
