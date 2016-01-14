@@ -17,7 +17,7 @@ public class Help extends Command
         super.help = "help (Help - commands list)";
     }
 
-    public void doExec(String[] args)  {
+    public String doExec(String[] args)  {
         StringBuilder cb = new StringBuilder();
         for (Command c : currentState.getCommands()) {
             try {
@@ -27,7 +27,7 @@ public class Help extends Command
                 e.printStackTrace();
             }
         }
-        System.out.println(cb.toString());
+        return cb.toString();
 
     }
 

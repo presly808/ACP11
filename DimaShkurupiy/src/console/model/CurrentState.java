@@ -25,7 +25,6 @@ public class CurrentState {
             Constructor constr = c.getConstructor(this.getClass());
             commands.add((Command) constr.newInstance(this) );
         }
-
     }
 
     public String getCurrentPath() {

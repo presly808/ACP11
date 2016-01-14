@@ -7,8 +7,8 @@ import console.model.ICommandPlugin;
 /**
  * Created by Шкурупий on 09.01.2016.
  */
-public class Dir extends Command {
-                    //implements ICommandPlugin {
+public class Dir extends Command
+                    implements ICommandPlugin {
 
     public Dir(CurrentState currentState) {
         super.name = "dir";
@@ -16,9 +16,7 @@ public class Dir extends Command {
         super.help = "dir (Directory listing)";
     }
 
-    public void doExec(String[] args) {
-
-        System.out.println("command " + super.name + "was executed");
-
+    public String doExec(String[] args) {
+        return "command " + super.name + " was executed";
     }
 }

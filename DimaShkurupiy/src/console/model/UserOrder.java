@@ -2,7 +2,6 @@ package console.model;
 
 /**
  * Created by DNK on 10.01.2016.
- * класс для описания команд пользователя: команда + агрументы
  */
 public class UserOrder {
 

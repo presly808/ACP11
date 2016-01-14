@@ -16,8 +16,8 @@ public class Cd extends Command
         super.help = "cd (ChangeDirectory)";
     }
 
-    public void doExec(String[] args) {
-        System.out.println("OPACHKI! command " + name + " was executed " + currentState.getCurrentPath());
+    public String doExec(String[] args) {
+        return "OPACHKI! command " + name + " was executed " + currentState.getCurrentPath();
     }
 
  }
