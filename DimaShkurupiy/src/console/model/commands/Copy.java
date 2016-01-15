@@ -1,6 +1,7 @@
 package console.model.commands;
 
 import console.model.Command;
+import console.model.CurrentState;
 import console.model.ICommandPlugin;
 
 /**
@@ -9,11 +10,13 @@ import console.model.ICommandPlugin;
 public class Copy extends Command
                     implements ICommandPlugin {
 
-        public Copy() {
+    public Copy(CurrentState currentState) {
         super.name = "copy";
+        super.currentState = currentState;
+        super.help = "copy (Copy file or directory)";
     }
 
-    public void doExec(String ... args) {
-        System.out.println("command " + name + "was executed");
+    public String doExec(String cName, String[] args) {
+        return "command " + name + " was executed";
     }
 }

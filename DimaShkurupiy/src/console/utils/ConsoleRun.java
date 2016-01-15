@@ -32,10 +32,8 @@ public class ConsoleRun {
         //cRun.runExec();
     }
 
-    public static void runExec(String commName, String ... args) throws IOException, InterruptedException {
+    public static String runExec(String commName, String ... args) throws IOException, InterruptedException {
 
-        /* ��������� � ������������ ProcessBuilder,
-        /* ��� ����� ��������� ��������� ��������� � ����������� */
         //ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", "notepad d:/temp/color_table.txt");
         //ProcessBuilder procBuilder = new ProcessBuilder("d:\\temp\\createdir.bat");
         //ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", "mkdir d:\\Temp\\333");
@@ -47,25 +45,23 @@ public class ConsoleRun {
         ProcessBuilder procBuilder = new ProcessBuilder("cmd.exe", "/c", commName, params);
 
 
-        // �������������� ����������� ����� ������ �� ����������� �����
         procBuilder.redirectErrorStream(true);
 
-        // ������ ���������
         Process process = procBuilder.start();
 
-        // ������ ����������� ����� ������ � ������� �� �����
         InputStream stdout = process.getInputStream();
         InputStreamReader isrStdout = new InputStreamReader(stdout);
         BufferedReader brStdout = new BufferedReader(isrStdout);
 
-        String line = null;
-        while ((line = brStdout.readLine()) != null) {
-            System.out.println(line);
+        StringBuilder line = new StringBuilder();
+        while (brStdout.readLine() != null) {
+            line.append(brStdout.readLine());
+            line.append("\n");
         }
 
-        // ���� ���� ���������� ��������� ��������� � ��������� ���, � ������� ��� ����������� �
-        // � ���������� exitVal
         int exitVal = process.waitFor();
+
+        return line.toString();
     }
 
 }

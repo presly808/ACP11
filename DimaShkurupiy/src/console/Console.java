@@ -2,6 +2,7 @@ package console;
 
 import console.controller.Controller;
 import console.utils.ConsoleRun;
+import console.view.WindowView;
 
 import java.util.List;
 

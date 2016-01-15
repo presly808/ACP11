@@ -6,6 +6,7 @@ import console.view.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Шкурупий on 08.01.2016.
@@ -18,40 +19,34 @@ public class Controller {
     public Controller() throws Exception {
         this.currentState = new CurrentState();
         this.consoleView = new ConsoleView(this.currentState);
-        //testCommandsAccess();
         askCommand();
     }
 
-    public void askCommand() throws IOException, InterruptedException, NoSuchMethodException {
-        String userCommand = this.consoleView.view();
+    public void askCommand(String ... res) throws IOException, InterruptedException, NoSuchMethodException {
+        // TODO make different threads for user input and userCommands stack. show the results of commands and back to waiting user input
+        String userCommand = this.consoleView.view(res);
         StrCmdParser parser = new StrCmdParser();
+        ArrayList<String> commandResults = new ArrayList<>();
 
-        // TODO parseUserCommand -> route command throw reflection call;
         ArrayList<UserOrder> uo = parser.parserStrCmd(userCommand);
-
-        boolean isCommandExternal = true;
 
         for (int i = 0; i < uo.size(); i++) {
             String commandName = uo.get(i).getuOrder();
-            for(Command c : this.currentState.getCommands()) {
-                if( commandName.equals(c.getName()) ) {
-                    // TODO return (refl call method doExec from class c)
-                    ReflectionUtils.callMethod(c, "doExec", uo.get(i).getuArgs());
-                    //ReflectionUtils.callMethod(c, "doExec");
-                    //ReflectionUtils.callMethod(c, "testReflCall", uo.get(i).getuArgs());
-                    continue;
-                }
-            }
-
-            ConsoleRun.runExec( commandName, uo.get(i).getuArgs() );
+            Command currentCommand = findCommandByName(commandName);
+            commandResults.add((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, uo.get(i).getuArgs()));
         }
 
-        askCommand();
+        String[] s = commandResults.toArray(new String[commandResults.size()]);
+        askCommand( s );
     }
 
- /*   public void testCommandsAccess() {
-        for(Command c: currentState.getCommands()){
-            System.out.println(c.getName());
+    private Command findCommandByName(String needleName) {
+        for (Command c : this.currentState.getCommands() ) {
+            if ( c.getName().equals( needleName.toLowerCase() ) ) {
+                return c;
+            }
         }
-    } */
+        return findCommandByName("cmd");
+    }
+
 }

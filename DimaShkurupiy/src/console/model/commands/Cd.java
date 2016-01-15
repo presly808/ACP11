@@ -1,6 +1,7 @@
 package console.model.commands;
 
 import console.model.Command;
+import console.model.CurrentState;
 import console.model.ICommandPlugin;
 
 /**
@@ -9,12 +10,14 @@ import console.model.ICommandPlugin;
 public class Cd extends Command
                     implements ICommandPlugin {
 
-    public Cd() {
+    public Cd(CurrentState currentState) {
         super.name = "cd";
+        super.currentState = currentState;
+        super.help = "cd (ChangeDirectory)";
     }
 
-    public void doExec(String ... args) {
-        System.out.println("OPACHKI! command " + name + "was executed");
+    public String doExec(String cName, String[] args) {
+        return "OPACHKI! command " + name + " was executed " + currentState.getCurrentPath();
     }
 
  }
