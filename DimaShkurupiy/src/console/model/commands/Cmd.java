@@ -6,6 +6,7 @@ import console.model.ICommandPlugin;
 import console.utils.ConsoleRun;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Created by Dima on 14.01.2016.
@@ -19,13 +20,11 @@ public class Cmd extends Command
         super.help = "cmd (Redirecting external commands to OS cmd shell)";
     }
 
-    public String doExec(String[] args) {
-        String commandName = args[0];
-        String[] newArgs = new String[args.length-1];
-        System.arraycopy(newArgs,0,args,1,args.length-1);
-
+    public String doExec(String cName, String[] args) {
+        //System.out.println("cName:" + cName);
+        //System.out.println("args :" + Arrays.toString(args));
         try {
-            return ConsoleRun.runExec( commandName, newArgs );
+            return ConsoleRun.runExec( cName, args );
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

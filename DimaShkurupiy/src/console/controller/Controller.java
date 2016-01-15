@@ -29,31 +29,24 @@ public class Controller {
         ArrayList<String> commandResults = new ArrayList<>();
 
         ArrayList<UserOrder> uo = parser.parserStrCmd(userCommand);
-// TODO где то в этом цикле я зациклился. утром разберусь.
+
         for (int i = 0; i < uo.size(); i++) {
             String commandName = uo.get(i).getuOrder();
-            for(Command c : this.currentState.getCommands()) {
-// TODO add multiThreading  !!!
-                if( commandName.equals(c.getName()) ) {
-                    commandResults.add( (String) ReflectionUtils.callMethod(c, "doExec", uo.get(i).getuArgs()) );
-                } else {
-                    for ( Command cm : this.currentState.getCommands() ) {
-                        if( cm.getName().equals("cmd") ) {
-                            String[] newArgs = new String[uo.get(i).getuArgs().length + 1];
-                            newArgs[0] = commandName;
-                            System.arraycopy(uo.get(i).getuArgs(),0,newArgs,1,uo.get(i).getuArgs().length);
-
-                            commandResults.add( (String) ReflectionUtils.callMethod(cm, "doExec",newArgs) );
-                            continue;
-                        }
-                    }
-                }
-            }
-// TODO Continue issue - this code always run. idea - run ext command throw the plugin class - it seems to be able make multithreading solution
-            //System.out.println( ConsoleRun.runExec( commandName, uo.get(i).getuArgs() ) );
+            Command currentCommand = findCommandByName(commandName);
+            commandResults.add((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, uo.get(i).getuArgs()));
         }
+
         String[] s = commandResults.toArray(new String[commandResults.size()]);
         askCommand( s );
+    }
+
+    private Command findCommandByName(String needleName) {
+        for (Command c : this.currentState.getCommands() ) {
+            if ( c.getName().equals( needleName.toLowerCase() ) ) {
+                return c;
+            }
+        }
+        return findCommandByName("cmd");
     }
 
 }

@@ -16,7 +16,7 @@ public class Dir extends Command
         super.help = "dir (Directory listing)";
     }
 
-    public String doExec(String[] args) {
+    public String doExec(String cName, String[] args) {
         return "command " + super.name + " was executed";
     }
 }
