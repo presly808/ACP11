@@ -16,7 +16,7 @@ public class Exit extends Command
         super.help = "exit (Exit this program)";
     }
 
-    public String doExec(String[] args) {
+    public String doExec(String cName, String[] args) {
         System.exit(999);
         return "see you!"; // TODO ну и как отсюда выкинуть строку?
     }

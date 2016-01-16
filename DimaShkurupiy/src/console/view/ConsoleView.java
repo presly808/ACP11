@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by Шкурупий on 08.01.2016.
  */
-public class ConsoleView  implements IView{
+public class ConsoleView  implements IView, Runnable{
     private CurrentState currentState;
     protected String greetings = "Hello, this is the best ever command line console application. The MS-Dos and Bash console are only the childs, realy, men!\n";
 
@@ -49,5 +49,7 @@ public class ConsoleView  implements IView{
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
+
+
 
 }

@@ -16,7 +16,7 @@ public class Copy extends Command
         super.help = "copy (Copy file or directory)";
     }
 
-    public String doExec(String[] args) {
+    public String doExec(String cName, String[] args) {
         return "command " + name + " was executed";
     }
 }

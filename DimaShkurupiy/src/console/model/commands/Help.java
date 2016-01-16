@@ -17,7 +17,7 @@ public class Help extends Command
         super.help = "help (Help - commands list)";
     }
 
-    public String doExec(String[] args)  {
+    public String doExec(String cName, String[] args)  {
         StringBuilder cb = new StringBuilder();
         for (Command c : currentState.getCommands()) {
             try {

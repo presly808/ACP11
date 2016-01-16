@@ -7,7 +7,7 @@ import java.awt.*;
 /**
  * Created by Dima on 13.01.2016.
  */
-public class WindowView extends JFrame implements IView{
+public class WindowView extends JFrame implements IView, Runnable{
     private CurrentState currentState;
     protected String greetings = "Hello, this is the best ever command line console application. The MS-Dos and Bash console are only the childs, realy, men!\n";
 
