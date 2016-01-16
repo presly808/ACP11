@@ -5,39 +5,79 @@ import console.model.*;
 import console.view.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.SynchronousQueue;
 
 /**
  * Created by Шкурупий on 08.01.2016.
  */
 public class Controller {
     private CurrentState currentState;
-    private ConsoleView consoleView;
+    private IView view;
     //private Command currentCommand;
+    CopyOnWriteArrayList<String> commandResults = new CopyOnWriteArrayList<String>();
 
     public Controller() throws Exception {
         this.currentState = new CurrentState();
-        this.consoleView = new ConsoleView(this.currentState);
+//        this.view = new ConsoleView(this.currentState);
+        this.view = new WindowView(this.currentState);
+        view.view(); //de facto == start producer of userCommand
+        // can start here any other produsers of userCommand (for example - from net port listener - other users throw terminal can sends own commands
         askCommand();
     }
 
-    public void askCommand(String ... res) throws IOException, InterruptedException, NoSuchMethodException {
-        // TODO make different threads for user input and userCommands stack. show the results of commands and back to waiting user input
-        String userCommand = this.consoleView.view(res);
-        StrCmdParser parser = new StrCmdParser();
-        ArrayList<String> commandResults = new ArrayList<>();
+    public void askCommand(String ... previosReturnedResultsToShow) {
+        final String[] userCommand = {""};
 
-        ArrayList<UserOrder> uo = parser.parserStrCmd(userCommand);
+        Thread consumer = new Thread("GET_USER_COMMAND") {
+            public void run() {
+                userCommand[0] = currentState.getUserCommand();
+            }
+        };
+        consumer.start();
 
-        for (int i = 0; i < uo.size(); i++) {
-            String commandName = uo.get(i).getuOrder();
-            Command currentCommand = findCommandByName(commandName);
-            commandResults.add((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, uo.get(i).getuArgs()));
+        try {
+            consumer.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
-        String[] s = commandResults.toArray(new String[commandResults.size()]);
-        askCommand( s );
+        //ArrayList<String> commandResults = new ArrayList<>();
+        //List<String> commandResults = Collections.synchronizedList(new ArrayList<String>());
+        //CopyOnWriteArrayList<String> commandResults = new CopyOnWriteArrayList<String>();
+
+        StrCmdParser parser = new StrCmdParser();
+        ArrayList<UserOrder> userOrders = parser.parserStrCmd(userCommand[0]);
+
+        for (int i = 0; i < userOrders.size(); i++) {
+            String commandName = userOrders.get(i).getuOrder();
+            Command currentCommand = findCommandByName(commandName);
+            String[] currentArgs = userOrders.get(i).getuArgs();
+ //                commandResults.add((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, userOrders.get(i).getuArgs()));
+            Thread threadForCommand = new Thread("Command") {
+                public void run() {
+                    try {
+                        commandResults.add((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, currentArgs));
+                        //System.out.println((String) ReflectionUtils.callMethod(currentCommand, "doExec", commandName, currentArgs));
+                    } catch (NoSuchMethodException e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+            threadForCommand.start();
+        }
+
+        ArrayList<String> arrStr = new ArrayList<>();
+            Iterator<String> iterator = commandResults.iterator();
+            while (iterator.hasNext()) {
+                arrStr.add(iterator.next());
+            }
+            commandResults = new CopyOnWriteArrayList<String>();
+// TODO Разобраться как передавать результаты выплонения правильно. Сейчас я пытаюсь брать результаты раньше, чем они там появляются. продюсер-консюмер?
+        String[] returnedResultsToShow = arrStr.toArray(new String[arrStr.size()]);
+        view.write(returnedResultsToShow);
+        askCommand();
     }
 
     private Command findCommandByName(String needleName) {

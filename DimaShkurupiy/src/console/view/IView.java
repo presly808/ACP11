@@ -7,12 +7,15 @@ import console.model.CurrentState;
  */
 public interface IView extends Runnable{
 
-    void initView();
+    void initView(String ... str);
 
-    public String view(String ... str);
+//    public String view(String ... str);
+    public void view(String ... str);
 
     public void showOutput(String ... str);
 
     public String readUserInput();
+
+    public void write(String ... str);
 
 }
