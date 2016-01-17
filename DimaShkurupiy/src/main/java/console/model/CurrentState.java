@@ -23,7 +23,7 @@ public class CurrentState {
     private List<Command> commands = new ArrayList<>();
 
     public CurrentState() throws Exception {
-        this.commandsClasses = getClasses(Console.class.getClassLoader(),"console/model/commands");
+        this.commandsClasses = getClasses(Console.class.getClassLoader(), "console/model/commands");
         for(Class c:this.commandsClasses){
             Constructor constr = c.getConstructor(this.getClass());
             commands.add((Command) constr.newInstance(this) );
