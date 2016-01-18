@@ -6,7 +6,6 @@ import console.model.ICommandPlugin;
 import console.utils.ConsoleRun;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * Created by Dima on 14.01.2016.

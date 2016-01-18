@@ -1,7 +1,5 @@
 package console.view;
 
-import console.model.CurrentState;
-
 /**
  * Created by Dima on 13.01.2016.
  */

@@ -1,13 +1,15 @@
 package console.controller;
 
-import console.utils.*;
-import console.model.*;
-import console.view.*;
+import console.model.Command;
+import console.model.CurrentState;
+import console.model.UserOrder;
+import console.utils.ReflectionUtils;
+import console.utils.StrCmdParser;
+import console.view.IView;
+import console.view.WindowView;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.SynchronousQueue;
 
 /**
  * Created by Шкурупий on 08.01.2016.
