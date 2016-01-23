@@ -39,6 +39,8 @@ public class Controller {
         };
         consumer.start();
 
+        ///
+
         try {
             consumer.join();
         } catch (InterruptedException e) {
