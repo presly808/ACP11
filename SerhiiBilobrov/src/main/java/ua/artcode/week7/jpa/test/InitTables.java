@@ -9,6 +9,7 @@ import javax.persistence.Persistence;
 public class InitTables {
 
     public static void main(String[] args) {
+        // init configuration and create
         EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("hibernate-unit");
     }
 

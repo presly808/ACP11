@@ -5,6 +5,7 @@ import org.hibernate.annotations.GeneratorType;
 import javax.persistence.*;
 import java.util.Date;
 
+// POJO class + @Id
 @Entity
 @Table(name = "authors")
 public class Author { // class - table
@@ -22,6 +23,9 @@ public class Author { // class - table
 
     @Transient
     private String secret;
+
+    public Author() {
+    }
 
     public Author(String name, double salary, Date birthday) {
         this.name = name;
