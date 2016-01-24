@@ -1,5 +1,6 @@
 package ua.artcode.week7.jpa.dao;
 
+import org.apache.log4j.Logger;
 import ua.artcode.week7.jpa.model.Book;
 
 import javax.persistence.*;
@@ -10,14 +11,18 @@ import java.util.List;
  */
 public class BookDao implements Dao<Book> {
 
+    private static final Logger LOGGER = Logger.getLogger(BookDao.class);
+
     private EntityManagerFactory factory;
 
     public BookDao(EntityManagerFactory factory) {
+        LOGGER.trace("create book dao instance");
         this.factory = factory;
     }
 
     @Override
     public Book create(Book book) {
+        LOGGER.info("create new book");
         EntityManager manager = factory.createEntityManager();
         EntityTransaction transaction = manager.getTransaction();
 
@@ -25,7 +30,9 @@ public class BookDao implements Dao<Book> {
             transaction.begin();
             manager.persist(book);
             transaction.commit();
+            LOGGER.info("book was saved");
         } catch (Exception e) {
+            LOGGER.error("book was not saved", e);
             transaction.rollback();
         } finally {
             manager.close();

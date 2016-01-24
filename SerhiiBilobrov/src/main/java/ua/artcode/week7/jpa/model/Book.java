@@ -2,6 +2,7 @@ package ua.artcode.week7.jpa.model;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * id, name, @Enumerated book_type(novel, adventure, detective, it, psychology),
@@ -11,11 +12,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "books")
-public class Book {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+public class Book extends IdEntity {
 
     @Column(nullable = false)
     private String name;
@@ -30,6 +27,9 @@ public class Book {
     @Column(name = "publish_date")
     private Date publishDate;
 
+    @ManyToMany()
+    private List<Author> authorList;
+
     @Column
     private double price;
 
@@ -43,14 +43,6 @@ public class Book {
         this.city = city;
         this.publishDate = publishDate;
         this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -96,7 +88,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "id=" + id +
+                "id=" + getId() +
                 ", name='" + name + '\'' +
                 ", type=" + type +
                 ", city='" + city + '\'' +

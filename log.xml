@@ -1,0 +1,20 @@
+<log4j:event logger="ua.artcode.week7.logging.TestLogging" timestamp="1453618121659" level="INFO" thread="main">
+<log4j:message><![CDATA[start action in system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="ua.artcode.week7.logging.TestLogging" timestamp="1453618273199" level="INFO" thread="main">
+<log4j:message><![CDATA[start action in system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="ua.artcode.week7.logging.TestLogging" timestamp="1453618330459" level="DEBUG" thread="main">
+<log4j:message><![CDATA[start action in system]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="ua.artcode.week7.logging.TestLogging" timestamp="1453618949803" level="DEBUG" thread="main">
+<log4j:message><![CDATA[child2 debug]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="ua.artcode.week7.logging.TestLogging" timestamp="1453619081793" level="DEBUG" thread="main">
+<log4j:message><![CDATA[child2 debug]]></log4j:message>
+</log4j:event>
+

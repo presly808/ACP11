@@ -4,15 +4,13 @@ import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 // POJO class + @Id
 @Entity
 @Table(name = "authors")
-public class Author { // class - table
+public class Author extends IdEntity { // class - table
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     @Column(length = 20, nullable = false)
     private String name;
     @Column
@@ -20,6 +18,17 @@ public class Author { // class - table
 
     @Temporal(TemporalType.DATE)
     private Date birthday;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "address_id",
+            referencedColumnName = "id")
+    private Address address;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "authors_book",
+            joinColumns = {@JoinColumn(name = "author_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "book_id", referencedColumnName = "id")})
+    private List<Book> bookList;
 
     @Transient
     private String secret;
@@ -31,14 +40,6 @@ public class Author { // class - table
         this.name = name;
         this.salary = salary;
         this.birthday = birthday;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -63,5 +64,21 @@ public class Author { // class - table
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
     }
 }

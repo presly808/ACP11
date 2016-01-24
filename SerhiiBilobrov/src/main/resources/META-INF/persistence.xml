@@ -13,6 +13,7 @@
 
         <class>ua.artcode.week7.jpa.model.Author</class>
         <class>ua.artcode.week7.jpa.model.Book</class>
+        <class>ua.artcode.week7.jpa.model.Address</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
