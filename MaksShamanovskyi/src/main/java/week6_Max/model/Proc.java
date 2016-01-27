@@ -15,7 +15,9 @@ public class Proc {
     @Column(nullable = false)
     private int frequency;
 
-    @OneToMany(mappedBy = "processor", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "proc_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public NoteBook getNoteBook() {

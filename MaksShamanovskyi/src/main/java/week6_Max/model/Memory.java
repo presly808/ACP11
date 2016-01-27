@@ -16,7 +16,9 @@ public class Memory {
     @Column(nullable = false)
     private int size;
 
-    @OneToMany(mappedBy = "memory", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "memory_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public Memory() {

@@ -16,7 +16,9 @@ public class Hdd {
     @Column(nullable = false)
     private int size;
 
-    @OneToMany(mappedBy = "hdd", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "hdd_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public Hdd(String company, int size) {

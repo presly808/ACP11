@@ -60,7 +60,7 @@ public class ShopDao implements IShopDao<NoteBook> {
     @Override
     public List<NoteBook> getAllNotebooks(){
         EntityManager manager = factory.createEntityManager();
-        TypedQuery<NoteBook> query = manager.createQuery("SELECT * FROM NoteBook n", NoteBook.class);
+        TypedQuery<NoteBook> query = manager.createQuery("SELECT n FROM NoteBook n", NoteBook.class);
         query.setMaxResults(20);
         query.setFirstResult(0);
         return query.getResultList();

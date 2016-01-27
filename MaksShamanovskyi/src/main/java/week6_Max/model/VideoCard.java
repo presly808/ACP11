@@ -15,7 +15,9 @@ public class VideoCard {
     @Column(nullable = false)
     private int size;
 
-    @OneToMany(mappedBy = "videocard", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "vcard_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public VideoCard() {

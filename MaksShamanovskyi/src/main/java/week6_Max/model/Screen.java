@@ -12,7 +12,9 @@ public class Screen {
     @Column(nullable = false)
     private float size;
 
-    @OneToMany(mappedBy = "screen", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "screen_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public Screen() {

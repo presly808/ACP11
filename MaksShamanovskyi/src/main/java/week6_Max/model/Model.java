@@ -15,7 +15,9 @@ public class Model {
     @Column(nullable = false)
     private String model;
 
-    @OneToMany(mappedBy = "model", fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "model_id",
+            referencedColumnName = "id")
     private NoteBook noteBook;
 
     public Model() {
