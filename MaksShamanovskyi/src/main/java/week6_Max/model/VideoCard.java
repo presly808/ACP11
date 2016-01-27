@@ -1,12 +1,37 @@
-package week6_Max;
+package week6_Max.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "vcards")
 public class VideoCard {
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @Column(nullable = false)
     private String company;
+
+    @Column(nullable = false)
     private int size;
+
+    @OneToMany(mappedBy = "videocard", fetch = FetchType.EAGER)
+    private NoteBook noteBook;
+
+    public VideoCard() {
+    }
 
     public VideoCard(String company, int size) {
         this.company = company;
         this.size = size;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCompany() {
