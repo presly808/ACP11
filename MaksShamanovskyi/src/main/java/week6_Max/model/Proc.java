@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "proces")
-public class Proc {
+public class Proc implements IHardware{
     @Id
     @GeneratedValue
     private int id;
@@ -15,18 +15,10 @@ public class Proc {
     @Column(nullable = false)
     private int frequency;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "proc_id",
             referencedColumnName = "id")
     private NoteBook noteBook;
-
-    public NoteBook getNoteBook() {
-        return noteBook;
-    }
-
-    public void setNoteBook(NoteBook noteBook) {
-        this.noteBook = noteBook;
-    }
 
     public Proc() {
     }

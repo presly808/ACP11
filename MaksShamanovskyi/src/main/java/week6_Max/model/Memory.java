@@ -4,10 +4,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "memory")
-public class Memory {
+public class Memory implements IHardware{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private int id;
 
     @Column(nullable = false)
@@ -16,7 +16,7 @@ public class Memory {
     @Column(nullable = false)
     private int size;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "memory_id",
             referencedColumnName = "id")
     private NoteBook noteBook;

@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "models")
-public class Model {
+public class Model implements IHardware{
     @Id
     @GeneratedValue
     private int id;
@@ -15,7 +15,7 @@ public class Model {
     @Column(nullable = false)
     private String model;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "model_id",
             referencedColumnName = "id")
     private NoteBook noteBook;

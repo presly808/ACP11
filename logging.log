@@ -11819,3 +11819,1003 @@ line 1:8: unexpected token: *
 2016-01-27 19:52:33 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
 2016-01-27 19:52:36 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
 2016-01-27 19:52:36 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 18:26:56 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 18:26:57 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 18:26:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 18:26:57 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 18:26:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 18:26:58 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 18:26:58 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 18:26:58 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 18:26:58 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 18:26:58 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 18:27:00 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 18:27:00 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 18:27:02 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 18:27:04 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 18:38:23 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 18:38:23 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 18:38:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 18:38:23 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 18:38:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 18:38:24 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 18:38:24 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 18:38:24 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 18:38:24 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 18:38:24 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 18:38:25 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 18:38:25 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 18:38:26 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 18:38:27 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:10:36 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:10:36 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:10:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:10:36 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:10:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:10:37 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:10:37 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:10:37 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:10:37 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:10:37 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:10:38 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:10:38 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:10:41 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:10:41 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:10:41 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:10:41 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:10:41 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:10:41 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:10:41 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:10:41 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:10:41 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:10:41 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:10:41 WARN  EntityManagerFactoryRegistry:63 - HHH000436: Entity manager factory name (hibernate-shop) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2016-01-28 19:10:42 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:13:32 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.ShopView.setNewNotebook(ShopView.java:31)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 3 more
+2016-01-28 19:13:32 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:20:25 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:20:26 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:20:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:20:26 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:20:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:20:26 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:20:26 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:20:26 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:20:26 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:20:26 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:20:27 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:20:27 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:20:28 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:20:29 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:20:42 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.ShopView.setNewNotebook(ShopView.java:29)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:12)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 3 more
+2016-01-28 19:25:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:25:33 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:25:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:25:33 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:25:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:25:34 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:25:34 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:25:34 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:25:34 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:25:34 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:25:35 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:25:35 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:25:37 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:25:37 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:25:47 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.ShopView.setNewNotebook(ShopView.java:29)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:12)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 3 more
+2016-01-28 19:30:04 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:30:04 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:30:04 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:30:04 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:30:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:30:05 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:30:05 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:30:05 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:30:05 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:30:05 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:30:06 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:30:06 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:30:07 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:30:08 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:30:18 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:31:30 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:31:31 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:31:31 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:31:31 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:31:31 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:31:32 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:31:32 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:31:32 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:31:32 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:31:32 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:31:33 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:31:33 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:31:35 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:31:36 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:31:44 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.NoteBook
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.NoteBook
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:33:29 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:33:30 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:33:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:33:30 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:33:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:33:30 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:33:30 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:33:30 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:33:30 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:33:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:33:31 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:33:31 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:33:33 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:33:34 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:33:43 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:33:53 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:33:53 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:33:53 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:33:53 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:33:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:33:54 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:33:54 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:33:54 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:33:54 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:33:54 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:33:54 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:33:55 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:33:56 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:33:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:34:05 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:34:52 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:34:52 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:34:52 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:34:52 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:34:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:34:52 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:34:53 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:34:53 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:34:53 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:34:53 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:34:53 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:34:53 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:34:55 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:34:56 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:35:04 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:36:56 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:36:57 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:36:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:36:57 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:36:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:36:57 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:36:57 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:36:57 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:36:57 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:36:57 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:36:59 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:36:59 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:37:00 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:37:01 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:37:07 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:38:39 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:38:39 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:38:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:38:39 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:38:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:38:40 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:38:40 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:38:40 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:38:40 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:38:40 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:38:41 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:38:41 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:38:43 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:38:43 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:38:52 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:42:46 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:42:47 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:42:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:42:47 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:42:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:42:48 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:42:48 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:42:48 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:42:48 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:42:48 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:42:48 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:42:48 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:42:50 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:42:51 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:42:59 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-28 19:44:00 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-28 19:44:01 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-28 19:44:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-28 19:44:01 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-28 19:44:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-28 19:44:02 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-28 19:44:02 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-28 19:44:02 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-28 19:44:02 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-28 19:44:02 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-28 19:44:02 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-28 19:44:03 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-28 19:44:04 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-28 19:44:05 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-28 19:44:12 ERROR ShopDao:28 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:24)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-29 14:46:38 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:46:38 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:46:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:46:38 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:46:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:46:40 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:46:40 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:46:40 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:46:40 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:46:40 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:46:41 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:46:42 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:46:44 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:46:45 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:46:53 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:27)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-29 14:49:51 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:49:51 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:49:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:49:51 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:49:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:49:52 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:49:52 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:49:52 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:49:52 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:49:52 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:49:55 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:49:55 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:49:56 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:49:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:51:00 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:27)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-29 14:51:27 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:51:27 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:51:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:51:27 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:51:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:51:28 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:51:28 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:51:28 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:51:28 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:51:28 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:51:28 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:51:28 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:51:31 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:52:46 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:55:05 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:55:05 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:55:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:55:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:55:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:55:06 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:55:06 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:55:06 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:55:06 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:55:06 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:55:07 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:55:07 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:55:09 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:55:09 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:56:14 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:56:14 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:56:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:56:15 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:56:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:56:15 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:56:15 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:56:15 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:56:15 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:56:15 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:56:16 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:56:16 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:56:18 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:56:18 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:56:27 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:27)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Hdd
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-29 14:57:50 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:57:50 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:57:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:57:50 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:57:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:57:51 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:57:51 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:57:51 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:57:51 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:57:51 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:57:52 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:57:52 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:57:54 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:57:55 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:58:51 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 14:58:52 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 14:58:52 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 14:58:52 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 14:58:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 14:58:52 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 14:58:52 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 14:58:52 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 14:58:52 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 14:58:52 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 14:58:53 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 14:58:53 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 14:58:55 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 14:58:56 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 14:59:06 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Memory
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1608)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1152)
+	at week7_Max.ShopDao.create(ShopDao.java:27)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: org.hibernate.PersistentObjectException: detached entity passed to persist: week6_Max.model.Memory
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:764)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:757)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:304)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:146)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:95)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:425)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:249)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:121)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:774)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:747)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:752)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	... 2 more
+2016-01-29 15:00:07 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 15:00:07 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 15:00:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 15:00:07 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 15:00:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 15:00:08 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 15:00:08 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 15:00:08 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 15:00:08 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 15:00:08 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 15:00:09 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 15:00:09 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 15:00:11 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 15:00:11 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 15:00:22 WARN  SqlExceptionHelper:127 - SQL Error: 1062, SQLState: 23000
+2016-01-29 15:00:22 ERROR SqlExceptionHelper:129 - Duplicate entry '1' for key 'PRIMARY'
+2016-01-29 15:00:22 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-01-29 15:00:22 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at week7_Max.ShopDao.create(ShopDao.java:28)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 2 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2884)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3384)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:451)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:336)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2905)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2281)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 2 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+2016-01-29 15:02:29 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 15:02:29 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 15:02:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 15:02:29 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 15:02:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 15:02:30 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 15:02:30 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 15:02:30 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 15:02:30 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 15:02:30 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 15:02:31 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 15:02:31 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 15:02:33 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 15:02:34 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 15:02:41 WARN  SqlExceptionHelper:127 - SQL Error: 1062, SQLState: 23000
+2016-01-29 15:02:41 ERROR SqlExceptionHelper:129 - Duplicate entry '1' for key 'PRIMARY'
+2016-01-29 15:02:41 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2016-01-29 15:02:41 ERROR ShopDao:31 - noteBook was not saved
+javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:86)
+	at week7_Max.ShopDao.create(ShopDao.java:28)
+	at week7_Max.TestHibernateShop.main(TestHibernateShop.java:13)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:67)
+	... 2 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2884)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3384)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:451)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:336)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2905)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2281)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61)
+	... 2 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2019)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1937)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1922)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+2016-01-29 15:44:52 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 15:44:52 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 15:44:52 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 15:44:52 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 15:44:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 15:44:53 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 15:44:53 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 15:44:53 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 15:44:53 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 15:44:53 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 15:44:54 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 15:44:54 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 15:44:56 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 15:44:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 15:45:05 INFO  ShopDao:29 - noteBook was saved
+2016-01-29 15:47:01 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hibernate-shop
+	...]
+2016-01-29 15:47:01 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-01-29 15:47:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-01-29 15:47:01 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-01-29 15:47:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-01-29 15:47:03 WARN  DriverManagerConnectionProviderImpl:72 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-01-29 15:47:03 INFO  DriverManagerConnectionProviderImpl:128 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/week6]
+2016-01-29 15:47:03 INFO  DriverManagerConnectionProviderImpl:137 - HHH000046: Connection properties: {user=root, password=****}
+2016-01-29 15:47:03 INFO  DriverManagerConnectionProviderImpl:142 - HHH000006: Autocommit mode: false
+2016-01-29 15:47:03 INFO  DriverManagerConnectionProviderImpl:39 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-01-29 15:47:04 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-01-29 15:47:04 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-01-29 15:47:05 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-01-29 15:47:06 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-01-29 15:47:22 INFO  ShopDao:29 - noteBook was saved

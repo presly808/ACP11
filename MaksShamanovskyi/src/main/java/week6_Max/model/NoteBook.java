@@ -5,37 +5,38 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "notebooks")
-public class NoteBook {
+public class NoteBook{
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private int id;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "model_id",
             referencedColumnName = "id")
     private Model model;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "proc_id",
             referencedColumnName = "id")
     private Proc processor;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "hdd_id",
             referencedColumnName = "id")
     private Hdd hdd;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "memory_id",
             referencedColumnName = "id")
     private Memory memory;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "vcard_id",
             referencedColumnName = "id")
     private VideoCard videoCard;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "screen_id",
             referencedColumnName = "id")
     private Screen screen;

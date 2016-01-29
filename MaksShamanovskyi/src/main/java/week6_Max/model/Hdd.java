@@ -5,9 +5,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "hdd")
-public class Hdd {
+public class Hdd implements IHardware{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private int id;
 
     @Column(nullable = false)
@@ -16,7 +16,7 @@ public class Hdd {
     @Column(nullable = false)
     private int size;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "hdd_id",
             referencedColumnName = "id")
     private NoteBook noteBook;
@@ -27,6 +27,14 @@ public class Hdd {
     }
 
     public Hdd() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getSize() {
