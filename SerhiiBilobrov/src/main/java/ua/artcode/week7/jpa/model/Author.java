@@ -1,6 +1,6 @@
 package ua.artcode.week7.jpa.model;
 
-import org.hibernate.annotations.GeneratorType;
+
 
 import javax.persistence.*;
 import java.util.Date;
