@@ -7,7 +7,6 @@ public interface IView extends Runnable{
 
     void initView(String ... str);
 
-//    public String view(String ... str);
     public void view(String ... str);
 
     public void showOutput(String ... str);
