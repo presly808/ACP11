@@ -11,9 +11,9 @@
 
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>ua.artcode.week7.jpa.model.Author</class>
-        <class>ua.artcode.week7.jpa.model.Book</class>
-        <class>ua.artcode.week7.jpa.model.Address</class>
+        <!--<class>ua.artcode.library.model.Author</class>
+        <class>ua.artcode.library.model.Book</class>
+        <class>ua.artcode.library.model.Address</class>-->
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

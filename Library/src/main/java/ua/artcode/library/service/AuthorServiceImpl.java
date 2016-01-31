@@ -1,11 +1,11 @@
-package ua.artcode.week7.jpa.service;
+package ua.artcode.library.service;
 
 import org.hibernate.service.spi.InjectService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ua.artcode.week7.jpa.dao.BookDao;
-import ua.artcode.week7.jpa.ioc.ForInject;
-import ua.artcode.week7.jpa.model.Book;
-import ua.artcode.week7.jpa.validator.Validator;
+import ua.artcode.library.dao.BookDao;
+import ua.artcode.library.model.Book;
+import ua.artcode.library.validator.Validator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class AuthorServiceImpl implements AuthorService {
 
-
+    @Autowired
     private BookDao bookDao;
 
     private Validator<Book> validator;
@@ -39,9 +39,9 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public boolean addBook(Book book) {
 
-        if(validator.isValid(book)){
+        /*if(validator.isValid(book)){
             return false;
-        }
+        }*/
 
         Book created = bookDao.create(book);
         return created != null;
