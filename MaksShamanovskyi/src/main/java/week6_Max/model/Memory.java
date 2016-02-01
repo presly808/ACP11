@@ -1,12 +1,40 @@
-package week6_Max;
+package week6_Max.model;
 
-public class Memory {
+import javax.persistence.*;
+
+@Entity
+@Table(name = "memory")
+public class Memory implements IHardware{
+
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @Column(nullable = false)
     private String company;
+
+    @Column(nullable = false)
     private int size;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "memory_id",
+            referencedColumnName = "id")
+    private NoteBook noteBook;
+
+    public Memory() {
+    }
 
     public Memory(String company, int size) {
         this.company = company;
         this.size = size;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCompany() {

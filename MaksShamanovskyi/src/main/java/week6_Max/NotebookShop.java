@@ -1,5 +1,7 @@
 package week6_Max;
 
+import week6_Max.model.*;
+
 import java.sql.*;
 import java.util.*;
 

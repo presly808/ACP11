@@ -1,12 +1,48 @@
-package week6_Max;
+package week6_Max.model;
 
-public class NoteBook {
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "notebooks")
+public class NoteBook{
+
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "model_id",
+            referencedColumnName = "id")
     private Model model;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "proc_id",
+            referencedColumnName = "id")
     private Proc processor;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "hdd_id",
+            referencedColumnName = "id")
     private Hdd hdd;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "memory_id",
+            referencedColumnName = "id")
     private Memory memory;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "vcard_id",
+            referencedColumnName = "id")
     private VideoCard videoCard;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "screen_id",
+            referencedColumnName = "id")
     private Screen screen;
+
+    public NoteBook() {
+    }
 
     public NoteBook(Model model, Proc processor, Hdd hdd, Memory memory, VideoCard videoCard, Screen screen) {
         this.model = model;
@@ -15,6 +51,14 @@ public class NoteBook {
         this.memory = memory;
         this.videoCard = videoCard;
         this.screen = screen;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Model getModel() {

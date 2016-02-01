@@ -1,12 +1,39 @@
-package week6_Max;
+package week6_Max.model;
 
-public class Model {
+import javax.persistence.*;
+
+@Entity
+@Table(name = "models")
+public class Model implements IHardware{
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @Column(nullable = false)
     private String company;
+
+    @Column(nullable = false)
     private String model;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "model_id",
+            referencedColumnName = "id")
+    private NoteBook noteBook;
+
+    public Model() {
+    }
 
     public Model(String company, String model) {
         this.company = company;
         this.model = model;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCompany() {

@@ -1,12 +1,40 @@
-package week6_Max;
+package week6_Max.model;
 
-public class Hdd {
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "hdd")
+public class Hdd implements IHardware{
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @Column(nullable = false)
     private String company;
+
+    @Column(nullable = false)
     private int size;
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "hdd_id",
+            referencedColumnName = "id")
+    private NoteBook noteBook;
 
     public Hdd(String company, int size) {
         this.company = company;
         this.size = size;
+    }
+
+    public Hdd() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getSize() {
