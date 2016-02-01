@@ -1,6 +1,6 @@
 package ollo;
 
-import ollo.view.ConsoleView;
+import ollo.controller.Controller;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,9 +13,9 @@ public class OlloStart {
         System.out.println( "Hello ollo! " );
 
         ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath:app-context.xml");
-        ConsoleView view = (ConsoleView) appContext.getBean("consoleView");
+        Controller app = appContext.getBean(Controller.class);
 
-        view.startView();
+        app.startView();
 
     }
 }

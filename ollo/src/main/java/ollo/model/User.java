@@ -1,5 +1,6 @@
 package ollo.model;
 
+import ollo.view.IView;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -9,7 +10,9 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="User")
-public class User {
+public abstract class User {
+    @Transient
+    protected IView view;
 
     @Id
     @GeneratedValue(generator="increment")
@@ -94,7 +97,13 @@ public class User {
         this.password = password;
     }
 
-    public void startView() {
-
+    public IView getView() {
+        return view;
     }
+
+    public void setView(IView view) {
+        this.view = view;
+    }
+
+    public abstract void startView();
 }

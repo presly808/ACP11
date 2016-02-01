@@ -8,4 +8,9 @@ public class UserGuest extends User {
     public UserGuest() {
     }
 
+    @Override
+    public void startView() {
+        view.startView();
+    }
+
 }

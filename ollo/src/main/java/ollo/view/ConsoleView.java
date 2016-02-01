@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Dima on 31.01.2016.
  */
-public class ConsoleView {
+public class ConsoleView implements IView{
     private Scanner sc;
 
     private final static String EXIT = "0. Exit";
