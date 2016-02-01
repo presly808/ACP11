@@ -12,8 +12,8 @@ public class OlloStart {
 
         System.out.println( "Hello ollo! " );
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:app-context.xml");
-        ConsoleView view = (ConsoleView) applicationContext.getBean("consoleView");
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath:app-context.xml");
+        ConsoleView view = (ConsoleView) appContext.getBean("consoleView");
 
         view.startView();
 

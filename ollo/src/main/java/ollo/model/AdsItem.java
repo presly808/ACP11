@@ -16,12 +16,13 @@ public class AdsItem {
     @GeneratedValue(generator="increment")
     @GenericGenerator(name="increment", strategy = "increment")
     @Column(name="id")
-    private long id;
+    private int id;
 
     @Column(name="state")
     private int state;
 
-    @Column(name="owner")
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "owner", referencedColumnName = "id")
     private User owner;
 
     @Column(name="title")
@@ -36,11 +37,11 @@ public class AdsItem {
     public AdsItem() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

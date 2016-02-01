@@ -15,7 +15,7 @@ public class User {
     @GeneratedValue(generator="increment")
     @GenericGenerator(name="increment", strategy = "increment")
     @Column(name="id")
-    private long id;
+    private int id;
 
     @Column(name="state")
     private int state;
@@ -29,14 +29,20 @@ public class User {
     @Column(name="phone")
     private String phone;
 
+    @Column(name="login")
+    private String login;
+
+    @Column(name="password")
+    private String password;
+
     public User() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -70,5 +76,25 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void startView() {
+
     }
 }
