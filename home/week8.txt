@@ -1,0 +1,23 @@
+1. Spring Framework
+
+   III. Core Technologies
+   http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/
+   
+   Design patterns: ServiceLocator, DependencyInjection
+
+   Spring Configuration: XML, Annotation
+
+   AOP
+	Aspect - Advice - JoinPoint - PointCut
+
+2. Coding your own project
+	Must be min 10 methods of business logic
+
+	- Spring
+	- JPA
+	- MySql
+	- Tests (JUnit) + see Mochito framework
+	- View (console)
+	- Logging - Do logging via AOP
+	- Try to control transactions via AOP
+
