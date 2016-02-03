@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Table(name="User")
 public abstract class User {
     @Transient
-    protected IView view;
+    private IView view;
 
     @Id
     @GeneratedValue(generator="increment")
@@ -105,5 +105,7 @@ public abstract class User {
         this.view = view;
     }
 
-    public abstract void startView();
+    public void startView() {
+        view.startView();
+    }
 }

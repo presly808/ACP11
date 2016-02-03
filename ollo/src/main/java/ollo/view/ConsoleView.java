@@ -75,7 +75,7 @@ public class ConsoleView implements IView{
                 break;
             case 0:
             default:
-
+                System.exit(999);
                 break;
         }
     }

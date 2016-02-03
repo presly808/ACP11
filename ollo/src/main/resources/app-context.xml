@@ -38,13 +38,13 @@
 
        <bean id="consoleView" class="ollo.view.ConsoleView" />
 
-       <bean id="ollo" class="ollo.model.OlloMain">
-              <property name="user" ref="userGuest" />
-       </bean>
-
        <bean id="userGuest" class="ollo.model.UserGuest">
               <property name="name" value="guest" />
               <property name="view" ref="consoleView" />
+       </bean>
+
+       <bean id="ollo" class="ollo.model.OlloMain">
+              <property name="user" ref="userGuest" />
        </bean>
 
        <bean id="controller" class="ollo.controller.Controller">

@@ -22,4 +22,12 @@ public class Controller {
     public void startView() {
         ollo.getUser().startView();
     }
+
+    public String createNewUser(String login, String passwprd) {
+
+
+        return "User " + login + " is already registered in system";
+    }
+
+
 }
