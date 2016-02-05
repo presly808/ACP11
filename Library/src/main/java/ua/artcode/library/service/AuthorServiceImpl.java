@@ -3,7 +3,10 @@ package ua.artcode.library.service;
 import org.hibernate.service.spi.InjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+import ua.artcode.library.dao.AuthorDao;
 import ua.artcode.library.dao.BookDao;
+import ua.artcode.library.model.Author;
 import ua.artcode.library.model.Book;
 import ua.artcode.library.validator.Validator;
 
@@ -16,6 +19,9 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Autowired
     private BookDao bookDao;
+
+    @Autowired
+    private AuthorDao authorDao;
 
     private Validator<Book> validator;
 
@@ -45,5 +51,12 @@ public class AuthorServiceImpl implements AuthorService {
 
         Book created = bookDao.create(book);
         return created != null;
+    }
+
+    @Override
+    @Transactional
+    public boolean addAuthor(Author author) {
+        Author created = authorDao.create(author);
+        return created.getId() != 0;
     }
 }

@@ -1,5 +1,6 @@
 package ua.artcode.library.service;
 
+import ua.artcode.library.model.Author;
 import ua.artcode.library.model.Book;
 
 import java.util.List;
@@ -14,6 +15,8 @@ public interface AuthorService {
     List<Book> getBooks(int authorId);
 
     boolean addBook(Book book);
+
+    boolean addAuthor(Author author);
 
 
 }

@@ -9,6 +9,7 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
+       <tx:annotation-driven />
        <context:annotation-config/>
        <context:component-scan base-package="ua.artcode.library"/>
 
@@ -36,5 +37,9 @@
               </property>
        </bean>
 
+
+       <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+              <property name="entityManagerFactory" ref="entityManagerFactory" />
+       </bean>
 
 </beans>

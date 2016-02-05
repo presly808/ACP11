@@ -8,9 +8,6 @@ import ua.artcode.library.model.Book;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by serhii on 23.01.16.
- */
 @Component
 public class BookDao implements ua.artcode.library.dao.Dao<Book> {
 
