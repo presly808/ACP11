@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import ua.artcode.library.dao.AuthorDao;
 import ua.artcode.library.dao.BookDao;
+import ua.artcode.library.exception.NoBookFoundException;
 import ua.artcode.library.model.Author;
 import ua.artcode.library.model.Book;
 import ua.artcode.library.validator.Validator;
@@ -35,6 +36,18 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public String login(String name, String pass) {
         return null;
+    }
+
+    @Override
+    public Book getBookById(Integer id) throws NoBookFoundException {
+        Book book = bookDao.findById(id);
+
+        if(book == null){
+            throw new NoBookFoundException("Book with id " + id + " was not found");
+        }
+
+        return book;
+
     }
 
     @Override

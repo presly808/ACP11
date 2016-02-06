@@ -1,5 +1,6 @@
 package ua.artcode.library.service;
 
+import ua.artcode.library.exception.NoBookFoundException;
 import ua.artcode.library.model.Author;
 import ua.artcode.library.model.Book;
 
@@ -11,6 +12,8 @@ import java.util.List;
 public interface AuthorService {
 
     String login(String name, String pass);
+
+    Book getBookById(Integer id) throws NoBookFoundException;
 
     List<Book> getBooks(int authorId);
 

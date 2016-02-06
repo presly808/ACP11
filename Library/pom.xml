@@ -11,7 +11,7 @@
 
     <artifactId>Library</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>Library</name>
     <url>http://maven.apache.org</url>
@@ -19,5 +19,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <finalName>library</finalName>
+    </build>
+
 
 </project>

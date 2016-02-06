@@ -568,3 +568,47 @@ Caused by: java.lang.NoSuchMethodException: ua.artcode.library.dao.BookDao.<init
 2016-02-05 23:18:02 INFO  BookDao:37 - book was saved
 2016-02-05 23:18:02 INFO  GenericApplicationContext:960 - Closing org.springframework.context.support.GenericApplicationContext@3108bc: startup date [Fri Feb 05 23:17:58 EET 2016]; root of context hierarchy
 2016-02-05 23:18:02 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-02-06 09:36:03 INFO  DefaultTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-02-06 09:36:03 INFO  DefaultTestContextBootstrapper:207 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+2016-02-06 09:36:03 INFO  DefaultTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@31a5c39e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3f49dace, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e397ed7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@490ab905, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56ac3a89]
+2016-02-06 09:36:03 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-02-06 09:36:04 INFO  GenericApplicationContext:578 - Refreshing org.springframework.context.support.GenericApplicationContext@731a74c: startup date [Sat Feb 06 09:36:04 EET 2016]; root of context hierarchy
+2016-02-06 09:36:04 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2016-02-06 09:36:04 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-02-06 09:36:04 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-02-06 09:36:04 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-06 09:36:05 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-02-06 09:36:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-02-06 09:36:05 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-06 09:36:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-06 09:36:06 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-06 09:36:06 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-02-06 09:36:07 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-02-06 09:36:08 INFO  BookDao:29 - create new book
+2016-02-06 09:36:08 INFO  BookDao:37 - book was saved
+2016-02-06 09:36:09 INFO  GenericApplicationContext:960 - Closing org.springframework.context.support.GenericApplicationContext@731a74c: startup date [Sat Feb 06 09:36:04 EET 2016]; root of context hierarchy
+2016-02-06 09:36:09 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-02-06 09:37:16 INFO  DefaultTestContextBootstrapper:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-02-06 09:37:16 INFO  DefaultTestContextBootstrapper:207 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+2016-02-06 09:37:16 INFO  DefaultTestContextBootstrapper:185 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@31a5c39e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3f49dace, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e397ed7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@490ab905, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56ac3a89]
+2016-02-06 09:37:17 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-02-06 09:37:17 INFO  GenericApplicationContext:578 - Refreshing org.springframework.context.support.GenericApplicationContext@731a74c: startup date [Sat Feb 06 09:37:17 EET 2016]; root of context hierarchy
+2016-02-06 09:37:17 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [app.properties]
+2016-02-06 09:37:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-02-06 09:37:18 INFO  LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-02-06 09:37:18 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-02-06 09:37:18 INFO  Version:37 - HHH000412: Hibernate Core {5.0.3.Final}
+2016-02-06 09:37:18 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2016-02-06 09:37:18 INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2016-02-06 09:37:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+2016-02-06 09:37:19 INFO  Dialect:154 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-02-06 09:37:19 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-02-06 09:37:20 INFO  SchemaUpdate:101 - HHH000228: Running hbm2ddl schema update
+2016-02-06 09:37:21 INFO  BookDao:29 - create new book
+2016-02-06 09:37:21 INFO  BookDao:37 - book was saved
+2016-02-06 09:37:22 INFO  GenericApplicationContext:960 - Closing org.springframework.context.support.GenericApplicationContext@731a74c: startup date [Sat Feb 06 09:37:17 EET 2016]; root of context hierarchy
+2016-02-06 09:37:22 INFO  LocalContainerEntityManagerFactoryBean:462 - Closing JPA EntityManagerFactory for persistence unit 'default'

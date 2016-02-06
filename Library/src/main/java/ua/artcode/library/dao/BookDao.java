@@ -74,7 +74,6 @@ public class BookDao implements ua.artcode.library.dao.Dao<Book> {
     @Override
     public Book findById(Object id) {
         EntityManager manager = factory.createEntityManager();
-        EntityTransaction transaction = manager.getTransaction();
 
         try {
             Book book = manager.find(Book.class, id);
