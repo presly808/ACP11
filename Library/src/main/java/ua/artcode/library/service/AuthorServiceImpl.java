@@ -4,6 +4,7 @@ import org.hibernate.service.spi.InjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import ua.artcode.library.dao.AuthorDao;
 import ua.artcode.library.dao.BookDao;
 import ua.artcode.library.exception.NoBookFoundException;
@@ -11,6 +12,7 @@ import ua.artcode.library.model.Author;
 import ua.artcode.library.model.Book;
 import ua.artcode.library.validator.Validator;
 
+import javax.transaction.NotSupportedException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -35,7 +37,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Override
     public String login(String name, String pass) {
-        return null;
+        throw new NotImplementedException();
     }
 
     @Override

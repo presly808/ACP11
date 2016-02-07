@@ -20,19 +20,12 @@ import java.util.Date;
 /**
  * localhost/book?bookId=34
  */
-public class BookServlet extends HttpServlet {
+public class BookServlet extends BaseServlet {
 
     public static final String APP_NAME = "library";
     public static final String ERROR_PAGE = "/pages/general-error.html";
     public static final String BOOK_INFO_JSP = "/WEB-INF/pages/book-info.jsp";
 
-    private AuthorService service;
-
-    @Override
-    public void init() throws ServletException {
-        ApplicationContext springContext = new ClassPathXmlApplicationContext("app-context.xml");
-        service = springContext.getBean(AuthorService.class);
-    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

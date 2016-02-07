@@ -2,6 +2,7 @@ package ua.artcode.library.dao;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import ua.artcode.library.model.Author;
 
@@ -10,6 +11,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 
 @Component
+//@Scope(value = "singleton")
 public class AuthorDao implements Dao<Author> {
 
     private static final Logger LOGGER = Logger.getLogger(BookDao.class);
@@ -48,4 +50,5 @@ public class AuthorDao implements Dao<Author> {
     public Author findById(Object id) {
         return null;
     }
+
 }

@@ -4,6 +4,27 @@
             http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
          version="2.4" >
 
+
+    <context-param>
+        <param-name>spring-location</param-name>
+        <param-value>classpath:app-context.xml</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>appName</param-name>
+        <param-value>app</param-value>
+    </context-param>
+
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>ua.artcode.library.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/author/*</url-pattern>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>BookServlet</servlet-name>
         <servlet-class>ua.artcode.library.conroller.BookServlet</servlet-class>
