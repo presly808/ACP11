@@ -5,6 +5,7 @@ import java.sql.*;
 /**
  * Created by serhii on 17.01.16.
  */
+
 public class _01IntroInsertJdbc {
 
     public static final String URL = "jdbc:mysql://localhost:3306/ACP11";
