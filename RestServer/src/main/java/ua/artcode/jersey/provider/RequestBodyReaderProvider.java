@@ -20,6 +20,9 @@ import java.lang.reflect.Type;
 @Provider
 @Consumes("application/json")
 public class RequestBodyReaderProvider implements MessageBodyReader {
+
+    private Gson gson = new Gson();
+
     @Override
     public boolean isReadable(Class aClass, Type type, Annotation[] annotations, MediaType mediaType) {
         return true;
@@ -27,7 +30,6 @@ public class RequestBodyReaderProvider implements MessageBodyReader {
 
     @Override
     public Object readFrom(Class aClass, Type type, Annotation[] annotations, MediaType mediaType, MultivaluedMap multivaluedMap, InputStream inputStream) throws IOException, WebApplicationException {
-        Gson gson = new Gson();
         Object from = gson.fromJson(new InputStreamReader(inputStream),aClass);
         return from;
     }

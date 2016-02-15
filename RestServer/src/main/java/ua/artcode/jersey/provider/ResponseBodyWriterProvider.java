@@ -19,10 +19,10 @@ import java.lang.reflect.Type;
 public class ResponseBodyWriterProvider implements MessageBodyWriter {
 
 
+    private Gson gson = new Gson();
 
     @Override
     public void writeTo(Object o, Class aClass, Type type, Annotation[] annotations, MediaType mediaType, MultivaluedMap multivaluedMap, OutputStream outputStream) throws IOException, WebApplicationException {
-        Gson gson = new Gson();
         String json = gson.toJson(o);
         outputStream.write(json.getBytes());
         outputStream.flush();
